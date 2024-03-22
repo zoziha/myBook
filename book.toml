@@ -1,0 +1,6 @@
+[book]
+authors = ["ZUO Zhihua"]
+language = "zh_CN"
+multilingual = false
+src = "src"
+title = "旅行者2号"
