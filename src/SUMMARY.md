@@ -15,3 +15,4 @@
 - [初识 R 语言](./ch13.md)
 - [Linux 程序运行内存查询](./ch14.md)
 - [GI 食物指南](./ch15.md)
+- [Matplotlib 绘图](./ch16.md)
