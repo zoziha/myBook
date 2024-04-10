@@ -16,3 +16,8 @@
 - [Linux 程序运行内存查询](./ch14.md)
 - [GI 食物指南](./ch15.md)
 - [Matplotlib 绘图](./ch16.md)
+- [复刻 Windows 环境（2024）](./ch17.md)
+    - [Desktop Apps](./ch17.1.md)
+    - [Microsoft Store Apps](./ch17.2.md)
+    - [MSYS2 安装包](./ch17.3.md)
+    - [Powershell 配置](./ch17.4.md)
