@@ -21,3 +21,4 @@
     - [Microsoft Store Apps](./ch17.2.md)
     - [MSYS2 安装包](./ch17.3.md)
     - [Powershell 配置](./ch17.4.md)
+- [华为手环](./ch18.md)
