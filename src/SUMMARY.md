@@ -23,3 +23,4 @@
     - [Powershell 配置](./ch17.4.md)
 - [华为手环](./ch18.md)
 - [开箱即用的 Octave](./ch19.md)
+- [荣耀笔记本](./ch20.md)
