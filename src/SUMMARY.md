@@ -38,4 +38,6 @@
 - [科研通用技术](./Y2024/M5/ch32.md)
 - [EMT 网格优化技术](./Y2024/M5/ch33.md)
 - [个人与团体](./Y2024/M5/ch34.md)
-- [5分钟教你在Windows上运行Fortran](./Y2024/M5/ch35.md)
+- [5 分钟教你在 Windows 上运行 Fortran](./Y2024/M5/ch35.md)
+- [AnyType 笔记](./Y2024/M5/ch36.md)
+- [Windows 资源管理与 Rust 高效应用集](./Y2024/M5/ch37.md)
