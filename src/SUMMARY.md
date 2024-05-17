@@ -41,3 +41,5 @@
 - [5 分钟教你在 Windows 上运行 Fortran](./Y2024/M5/ch35.md)
 - [AnyType 笔记](./Y2024/M5/ch36.md)
 - [Windows 资源管理与 Rust 高效应用集](./Y2024/M5/ch37.md)
+- [AI 应用推荐](./Y2024/M5/ch38.md)
+- [船舶专业常用的图像类型](./Y2024/M5/ch39.md)
