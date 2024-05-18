@@ -7,3 +7,5 @@ title = "旅行者2号"
 
 [output.html]
 mathjax-support = true
+git-repository-url = "https://github.com/zoziha/mybook"
+site-url = "https://userzuo.netlify.app/"
