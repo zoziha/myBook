@@ -1,5 +1,5 @@
 +++
-title = 'ch36-AnyType 笔记'
+title = 'Ch36-AnyType 笔记'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 +++

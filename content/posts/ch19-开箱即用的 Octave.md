@@ -1,5 +1,5 @@
 +++
-title = 'ch19-开箱即用的 Octave'
+title = 'Ch19-开箱即用的 Octave'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 +++

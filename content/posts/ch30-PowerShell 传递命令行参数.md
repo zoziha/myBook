@@ -1,5 +1,5 @@
 +++
-title = 'ch30-PowerShell 传递命令行参数'
+title = 'Ch30-PowerShell 传递命令行参数'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 +++

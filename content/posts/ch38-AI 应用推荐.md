@@ -1,5 +1,5 @@
 +++
-title = 'ch38-AI 应用推荐'
+title = 'Ch38-AI 应用推荐'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 +++

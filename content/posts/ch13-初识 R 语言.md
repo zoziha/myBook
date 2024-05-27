@@ -1,5 +1,5 @@
 +++
-title = 'ch13-初识 R 语言'
+title = 'Ch13-初识 R 语言'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 +++

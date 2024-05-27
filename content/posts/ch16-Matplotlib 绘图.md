@@ -1,5 +1,5 @@
 +++
-title = 'ch16-Matplotlib 绘图'
+title = 'Ch16-Matplotlib 绘图'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 +++

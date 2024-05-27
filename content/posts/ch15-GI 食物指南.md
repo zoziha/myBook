@@ -1,5 +1,5 @@
 +++
-title = 'ch15-GI 食物指南'
+title = 'Ch15-GI 食物指南'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 +++

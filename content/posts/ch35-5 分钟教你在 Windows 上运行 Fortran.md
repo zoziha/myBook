@@ -1,5 +1,5 @@
 +++
-title = 'ch35-5 分钟教你在 Windows 上运行 Fortran'
+title = 'Ch35-5 分钟教你在 Windows 上运行 Fortran'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 tags = ["Windows", "教程", "Fortran"]

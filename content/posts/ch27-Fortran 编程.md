@@ -1,5 +1,5 @@
 +++
-title = 'ch27-Fortran 编程'
+title = 'Ch27-Fortran 编程'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 tags = ["Fortran"]

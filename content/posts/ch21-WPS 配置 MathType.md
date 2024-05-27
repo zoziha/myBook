@@ -1,5 +1,5 @@
 +++
-title = 'ch21-WPS 配置 MathType'
+title = 'Ch21-WPS 配置 MathType'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 +++

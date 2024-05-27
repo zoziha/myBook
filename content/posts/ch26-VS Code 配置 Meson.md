@@ -1,5 +1,5 @@
 +++
-title = 'ch26-VS Code 配置 Meson'
+title = 'Ch26-VS Code 配置 Meson'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 +++

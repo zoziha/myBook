@@ -1,15 +1,15 @@
 +++
-title = 'ch17-复刻 Windows 环境（2024）'
+title = 'Ch17-复刻 Windows 环境（2024）'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 +++
 
 2024 年换机，记录当前顺手的 Windows 环境。
 
-1. [Desktop Apps](./ch17.1.md)；
-2. [Microsoft Store Apps](./ch17.2.md)；
-3. [MSYS2 Pkgs](./ch17.3.md)；
-4. [Powershell 配置](./ch17.4.md)；
+1. Desktop Apps；
+2. Microsoft Store Apps；
+3. MSYS2 Pkgs；
+4. Powershell 配置；
 5. Geek Uninstaller、AutoClock、Traffic Monitor、迅雷 11、B0pass、LS-DYNA、Fliqlo.scr等。
 6. [停止 Windows 更新][1]。
 

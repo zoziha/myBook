@@ -1,5 +1,5 @@
 +++
-title = 'ch06-mdBook 与 Hugo'
+title = 'Ch06-mdBook 与 Hugo'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 tags = ["Windows"]

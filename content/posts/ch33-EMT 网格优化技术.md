@@ -1,5 +1,5 @@
 +++
-title = 'ch33-EMT 网格优化技术'
+title = 'Ch33-EMT 网格优化技术'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 +++
