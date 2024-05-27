@@ -6,9 +6,10 @@ languageCode = 'zh-CN'
 languageName = '简体中文'
 copyright = "Written by ZUO Zhihua"
 paginate = 12
+hasCJKLanguage = true
 
 [author]
-  name = "ZUO Zhihua"
+  name = "左志华"
   email = "zuo.zhihua@foxmail.com"
   # avatar = "zoziha"
 
@@ -18,16 +19,16 @@ paginate = 12
         identifier = "posts"
         name = "所有文章"
         url = "/posts/"
-    # [[menu.main]]
-    #     weight = 2
-    #     identifier = "tags"
-    #     name = "标签"
-    #     url = "/tags/"
-    # [[menu.main]]
-    #     weight = 3
-    #     identifier = "categories"
-    #     name = "分类"
-    #     url = "/categories/"
+    [[menu.main]]
+        weight = 2
+        identifier = "tags"
+        name = "标签"
+        url = "/tags/"
+    [[menu.main]]
+        weight = 3
+        identifier = "categories"
+        name = "分类"
+        url = "/categories/"
     [[menu.main]]
         weight = 4
         identifier = "about"
@@ -45,9 +46,9 @@ paginate = 12
   #  date format
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
-  title = "My cool site"
+  title = "旅行者0x2号"
   # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "This is my cool site"
+  description = "记录美好生活。"
   # website images for Open Graph and Twitter Cards
   images = ["https://avatars.githubusercontent.com/u/32035096?v=4"]
 
@@ -82,7 +83,7 @@ paginate = 12
     #  whether to show the author
     author = true
     # Site creation time
-    since = 2019
+    since = 2023
     # ICP info only in China (HTML format is supported)
     icp = ""
     # license info (HTML format is supported)
@@ -109,7 +110,7 @@ paginate = 12
   #  App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "My cool site"
+    title = "旅行者0x2号"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -151,7 +152,7 @@ paginate = 12
     [params.home.profile]
       enable = true
       # Gravatar Email for preferred avatar in home page
-      gravatarEmail = ""
+      gravatarEmail = "zuo.zhihua@qq.com"
       # URL of avatar shown in home page
       avatarURL = "https://avatars.githubusercontent.com/u/32035096?v=4"
       #  title shown in home page (HTML format is supported)
