@@ -2,6 +2,8 @@
 title = 'ch27-Fortran 编程'
 date = 2024-05-26T23:35:19+08:00
 draft = false
+tags = ["Fortran"]
+categories = ["学习"]
 +++
 
 [Fortran][1] 是一种适应数学表达、高性能科学计算的成熟、免费语言，这是它的特色。
@@ -25,13 +27,12 @@ draft = false
 6. [Git](https://git-scm.com/)；
 7. [Intel VTune Profiler](https://software.intel.com/content/www/us/en/develop/tools/vtune-profiler.html)。
 
-```fortran
+{{< typeit code=Fortran >}}
 program main
     print *, "Hello, world!"
 end program main
-```
+{{< /typeit >}}
 
 备注：[华为是为数不多的涉及高性能编译器的国内公司之一][3]。
 
 [3]: https://support.huawei.com/enterprise/zh/doc/EDOC1100283328/8de2b49a
-

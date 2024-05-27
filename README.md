@@ -7,5 +7,5 @@
 
 ```sh
 hugo server -D
-hugo new post/my-first-post.md
+hugo new posts/my-first-post.md
 ```
