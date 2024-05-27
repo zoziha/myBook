@@ -1,16 +1,16 @@
-name: mdbook
+name: hugo & netlify
 on:
   push:
     paths:
-      - "src/**.md"
-      - "book.toml"
+      - "content/posts/**.md"
+      - "hugo.toml"
 
   pull_request:
     branches:
       - main
     paths:
-      - "src/**.md"
-      - "book.toml"
+      - "content/posts/**.md"
+      - "hugo.toml"
 
 jobs:
   pages:
@@ -19,18 +19,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup mdBook 📔
-        uses: peaceiris/actions-mdbook@v1
-        with:
-          mdbook-version: '0.4.10'
-          # mdbook-version: 'latest'
-
-      - run: mdbook build
-
       - name: Deploy to Netlify 🚀
         uses: nwtgck/actions-netlify@v3.0
         with:
-          publish-dir: "./book"
+          publish-dir: "./public"
           production-branch: main
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: "Deploy from GitHub Actions"

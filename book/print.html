@@ -1,0 +1,1418 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>旅行者2号</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Y2024/M4/ch01.html"><strong aria-hidden="true">1.</strong> 这本书</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch02.html"><strong aria-hidden="true">2.</strong> 科学上网</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch03.html"><strong aria-hidden="true">3.</strong> 研究领域</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch04.html"><strong aria-hidden="true">4.</strong> 个人影院</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch05.html"><strong aria-hidden="true">5.</strong> 鼠标替换</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch06.html"><strong aria-hidden="true">6.</strong> mdBook</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch07.html"><strong aria-hidden="true">7.</strong> 一次做饭</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch08.html"><strong aria-hidden="true">8.</strong> 自如租房</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch09.html"><strong aria-hidden="true">9.</strong> 时钟提醒</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch10.html"><strong aria-hidden="true">10.</strong> 动态调优</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch11.html"><strong aria-hidden="true">11.</strong> 远程控制</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch12.html"><strong aria-hidden="true">12.</strong> 内网穿透</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch13.html"><strong aria-hidden="true">13.</strong> 初识 R 语言</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch14.html"><strong aria-hidden="true">14.</strong> Linux 程序运行内存查询</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch15.html"><strong aria-hidden="true">15.</strong> GI 食物指南</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch16.html"><strong aria-hidden="true">16.</strong> Matplotlib 绘图</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch17.html"><strong aria-hidden="true">17.</strong> 复刻 Windows 环境（2024）</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Y2024/M4/ch17.1.html"><strong aria-hidden="true">17.1.</strong> Desktop Apps</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch17.2.html"><strong aria-hidden="true">17.2.</strong> Microsoft Store Apps</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch17.3.html"><strong aria-hidden="true">17.3.</strong> MSYS2 环境</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch17.4.html"><strong aria-hidden="true">17.4.</strong> Powershell 配置</a></li></ol></li><li class="chapter-item expanded "><a href="Y2024/M4/ch18.html"><strong aria-hidden="true">18.</strong> 华为手环</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch19.html"><strong aria-hidden="true">19.</strong> 开箱即用的 Octave</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch20.html"><strong aria-hidden="true">20.</strong> 荣耀笔记本</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch21.html"><strong aria-hidden="true">21.</strong> WPS 配置 MathType</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch22.html"><strong aria-hidden="true">22.</strong> 摆脱过度自责，拥抱成长</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch23.html"><strong aria-hidden="true">23.</strong> 文档校对</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch24.html"><strong aria-hidden="true">24.</strong> 西格玛标准</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch25.html"><strong aria-hidden="true">25.</strong> 字体推荐</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch26.html"><strong aria-hidden="true">26.</strong> VS Code 配置 Meson</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch27.html"><strong aria-hidden="true">27.</strong> Fortran 编程</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch28.html"><strong aria-hidden="true">28.</strong> 幸存者偏差</a></li><li class="chapter-item expanded "><a href="Y2024/M4/ch29.html"><strong aria-hidden="true">29.</strong> 低垂的果实</a></li><li class="chapter-item expanded "><a href="Y2024/M5/ch30.html"><strong aria-hidden="true">30.</strong> PowerShell 传递命令行参数</a></li><li class="chapter-item expanded "><a href="Y2024/M5/ch31.html"><strong aria-hidden="true">31.</strong> 物料</a></li><li class="chapter-item expanded "><a href="Y2024/M5/ch32.html"><strong aria-hidden="true">32.</strong> 科研通用技术</a></li><li class="chapter-item expanded "><a href="Y2024/M5/ch33.html"><strong aria-hidden="true">33.</strong> EMT 网格优化技术</a></li><li class="chapter-item expanded "><a href="Y2024/M5/ch34.html"><strong aria-hidden="true">34.</strong> 个人与团体</a></li><li class="chapter-item expanded "><a href="Y2024/M5/ch35.html"><strong aria-hidden="true">35.</strong> 5 分钟教你在 Windows 上运行 Fortran</a></li><li class="chapter-item expanded "><a href="Y2024/M5/ch36.html"><strong aria-hidden="true">36.</strong> AnyType 笔记</a></li><li class="chapter-item expanded "><a href="Y2024/M5/ch37.html"><strong aria-hidden="true">37.</strong> Windows 资源管理与 Rust 高效应用集</a></li><li class="chapter-item expanded "><a href="Y2024/M5/ch38.html"><strong aria-hidden="true">38.</strong> AI 应用推荐</a></li><li class="chapter-item expanded "><a href="Y2024/M5/ch39.html"><strong aria-hidden="true">39.</strong> 船舶专业常用的图像类型</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">旅行者2号</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/zoziha/mybook" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="1-这本书"><a class="header" href="#1-这本书">1. 这本书</a></h1>
+<p>记录美好生活。</p>
+<p>联系我：左志华，zuo.zhihua@foxmail.com。</p>
+<div align="center">
+<img src="https://gravatar.com/zoziha.qr" alt="https://gravatar.com/zoziha" width="100">
+</div>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2-科学上网"><a class="header" href="#2-科学上网">2. 科学上网</a></h1>
+<p>借助 Clash 等软件，订阅<a href="https://36y.me/">三流云</a>或<a href="https://qingyun.world/">轻云</a>等“机场”，采用规则模式，可以便捷访问国内外网页。</p>
+<p>若需要在终端环境下使用“机场”，比如 <a href="https://github.com/PowerShell/PowerShell">Powershell</a>，可以采用以下命令：</p>
+<pre><code class="language-powershell">$env:https_proxy="http://127.0.0.1:7897"    # 7897 为 Clash 的端口
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="3-研究领域"><a class="header" href="#3-研究领域">3. 研究领域</a></h1>
+<p>主要研究高性能科学计算、船舶水动力学、时间序列分析、气垫船运动与波浪载荷研究。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="4-个人影院"><a class="header" href="#4-个人影院">4. 个人影院</a></h1>
+<p>借助阿里云盘、<a href="https://www.clouddrive2.com/">CloudDrive2</a>、<a href="https://www.videolan.org/vlc/">VLC</a>、<a href="https://yunpan1.cc/">云盘资源分享</a>，可以在本地直接观看阿里云盘的内容，要求网速在 1MB/s 以上。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="5-鼠标替换"><a class="header" href="#5-鼠标替换">5. 鼠标替换</a></h1>
+<p>“致美化”上有一款小巧、美观的鼠标样式：<a href="https://zhutix.com/ico/elements-cus/">多彩元素光标</a>。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="6-mdbook"><a class="header" href="#6-mdbook">6. mdBook</a></h1>
+<p><a href="https://github.com/rust-lang/mdBook"><code>mdBook</code></a> 借助 <a href="https://markdown.com.cn/">markdown</a> 创建静态图书网页。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="7-一次做饭"><a class="header" href="#7-一次做饭">7. 一次做饭</a></h1>
+<p>一个人做一次两个人饭量的饭，按两天计，两天内，买菜约 10~30 分钟，洗菜切菜、煮饭约 10 分钟，炒菜约 10 分钟，
+吃饭约 15 分钟，洗碗约 10 分钟，平均下来，共约 50 分钟。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="8-自如租房"><a class="header" href="#8-自如租房">8. 自如租房</a></h1>
+<p>自如有齐全的出租屋体系：流程、厨房、卫生间、Wi-Fi、密码锁、书桌、衣柜、空调、床等。
+适合中短期租房，一般应该没有甲醛问题。</p>
+<p>2021年，在深圳罗湖，平均月租1400元（不含水电费、服务费）；
+2024年，在上海静安，平均月租2200元（不含水电费、服务费）。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="9-时钟提醒"><a class="header" href="#9-时钟提醒">9. 时钟提醒</a></h1>
+<p>在办公的时候，很容易过度工作，这时候需要一些额外的辅助工具帮助了解当前时间：</p>
+<ol>
+<li><a href="https://fliqlo.com/screensaver/">Fliqlo 屏幕保护</a>：在一定时间未操作电脑时，显示时钟屏保；</li>
+<li><a href="https://gitee.com/wanglifree/auto-clock">AutoClock 准点报时</a>：半小时跳出报时。</li>
+</ol>
+<h2 id="91-autoclock-设置"><a class="header" href="#91-autoclock-设置">9.1 AutoClock 设置</a></h2>
+<p>借鉴了鸿蒙设计色，背景采用 <code>RGB(0,0,0)</code>，字体色采用 <code>RGB(110,214,44)</code>，透明度 <code>80%</code>。
+位置：<code>X = 0, Y = 500</code>。</p>
+<h2 id="92-参考链接"><a class="header" href="#92-参考链接">9.2 参考链接</a></h2>
+<ol>
+<li><a href="https://ost.51cto.com/posts/4384">鸿蒙系统UI标准：HarmonyOS中的标准颜色浅析</a>。</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="10-动态调优"><a class="header" href="#10-动态调优">10. 动态调优</a></h1>
+<p>和面手艺里有一句俗语：</p>
+<blockquote>
+<p>面多了加水，水多了加面。</p>
+</blockquote>
+<p>迁移到其它的工程技术，这句话也适用，是除了理论指导外的另一种有效指导，也体现着一种动态平衡的思想，即在不断变化的环境中，通过持续的调整和优化，来达到系统性能的最佳状态。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="11-远程控制"><a class="header" href="#11-远程控制">11. 远程控制</a></h1>
+<p>远程控制软件：<a href="https://www.raylink.live/">Raylink</a> &gt; <a href="https://sunlogin.oray.com/">向日葵</a> &gt; <a href="https://www.todesk.com/">Todesk</a> &gt; <a href="https://rustdesk.com/zh/">Rustdesk</a> 。</p>
+<h2 id="111-点评"><a class="header" href="#111-点评">11.1 点评</a></h2>
+<p>Raylink 连接顺畅，唯一缺点是 Linux 客户端体验一般；向日葵各方面都不错，但容易掉线；Todesk 后台占用偏高；
+Rustdesk 云端服务器弱，可能存在连不上的窘况。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="12-内网穿透"><a class="header" href="#12-内网穿透">12. 内网穿透</a></h1>
+<p>IPv4 地址是有限的，而且很多设备都是在局域网内，无法直接访问。内网穿透就是一种技术，可以让外网访问到局域网内的设备。</p>
+<p>Frp 是一个内网穿透工具，可以将局域网内的设备映射到公网上，从而可以通过公网访问到局域网内的设备。
+Frp 内网穿透常用于 Linux 服务器的 ssh 端口映射，实现远程对服务器的端对端控制。
+以下是一些 Frp 服务：</p>
+<ol>
+<li><a href="https://xiaomy.net/">网穿云</a>；</li>
+<li><a href="https://frp.starryfrp.com/">StarryFrp</a>。</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="13-初识-r-语言"><a class="header" href="#13-初识-r-语言">13. 初识 R 语言</a></h1>
+<p>Windows 下载 R 解释器和 RStudio 集成开发环境：</p>
+<pre><code class="language-powershell">winget install Posit.RStudio --source winget
+</code></pre>
+<p><code>R</code> 语言与 <code>Matlab/Octave</code> 相似，比 <code>Python</code> 开箱即用些，但更适合统计分析与绘图。</p>
+<p><code>R</code> 语言示例：</p>
+<pre><code class="language-r">age = c(1, 3, 5, 2, 11, 9, 3, 9, 12, 3)
+weight = c(4.4, 5.3, 7.2, 5.2, 8.5, 7.3, 6, 10.4, 10.2, 6.1)
+mean(weight)
+sd(weight)
+cor(age,weight)
+plot(age,weight)
+</code></pre>
+<p>对比 <code>Python</code>:</p>
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import pearsonr  # 用于计算皮尔逊相关系数
+
+# 定义年龄和体重列表
+age = [1, 3, 5, 2, 11, 9, 3, 9, 12, 3]
+weight = [4.4, 5.3, 7.2, 5.2, 8.5, 7.3, 6.0, 10.4, 10.2, 6.1]
+
+# 计算体重的平均值
+x = np.mean(weight)
+
+# 计算体重的标准差
+sd_weight = np.std(weight)
+
+# 计算年龄和体重之间的皮尔逊相关系数
+correlation, _ = pearsonr(age, weight)
+
+# 输出平均值和标准差
+print(f"体重的平均值：{x}")
+print(f"体重的标准差：{sd_weight}")
+print(f"年龄与体重的相关系数：{correlation}")
+
+# 绘制散点图
+plt.scatter(age, weight)
+plt.xlabel("年龄")
+plt.ylabel("体重")
+plt.title("年龄与体重的关系")
+plt.show()
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="14-linux-程序运行内存查询"><a class="header" href="#14-linux-程序运行内存查询">14. Linux 程序运行内存查询</a></h1>
+<p>科学计算程序编程时可能需要查询程序运行时的内存使用情况。</p>
+<pre><code class="language-sh">ps -aux|grep bench3d-grid2  # 查看 bench3d-grid2 进程的 PID
+cat /proc/3300706/status    # 查看 PID 为 3300706 的进程的内存使用
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="15-gi-食物指南"><a class="header" href="#15-gi-食物指南">15. GI 食物指南</a></h1>
+<p>当自己或者亲朋好友有高血糖风险时，我们会想到要控制饮食，但是我们往往不知道该怎么做。这时候，我们可以参考一下中国卫健委的<a href="http://www.nhc.gov.cn/sps/s7887k/202301/0e55a01df50c47d9a4a43db026e3afc3/files/4fcbecd2c18e46baaf291bf46c2b79cd.pdf">《成人糖尿病食养指南》</a>。</p>
+<p>高 GI 食物主要包括：<strong>大米饭</strong>、糯米饭、大米粥、<strong>白面馒头</strong>、玉米饼、烙饼、白面包、梳打饼干、华夫饼、<strong>红薯</strong>、<strong>南瓜</strong>、<strong>西瓜</strong>、<strong>白糖</strong>、蜂蜜。</p>
+<p>一般，一周2次，监测一天内空腹和早餐、午餐、晚餐的餐后2小时血糖。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="16-matplotlib-绘图"><a class="header" href="#16-matplotlib-绘图">16. Matplotlib 绘图</a></h1>
+<p>在中文期刊发表时，往往需要在绘图中使用中文，并生成高质量图像，这里给出基础示例：</p>
+<pre><code class="language-python"># 绘制多个子图，并使用中文
+import matplotlib.pyplot as plt
+import scienceplots
+
+with plt.style.context(["science", "no-latex"]):
+    plt.rcParams["font.family"] = (
+        " Times New Roman, SimSun"  # 设置字体族，中文为SimSun，英文为Times New Roman
+    )
+    plt.rcParams["mathtext.fontset"] = "stix"  # 设置数学公式字体为stix
+    fig, axes = plt.subplots(figsize=(8, 6), ncols=2, nrows=2)
+
+    axes = axes.flatten()
+
+    for i in range(4):
+        axes[i].set_xlim(9000, 11000000)
+        axes[i].set_ylim(1, 100000)
+        axes[i].grid(linestyle="--")
+
+    axes[0].semilogx(
+        [10000, 100000, 1000000, 10000000],
+        [15.76, 36.64, 568.00, 14050.00],
+        label="Index-sort-2D",
+        marker="o",
+        ls="--",
+    )
+    axes[0].semilogx(
+        [10000, 100000, 1000000, 10000000],
+        [21.69, 70.50, 791.20, 34160.00],
+        label="Index-sort-3D",
+        marker="x",
+        ls="--",
+    )
+    axes[0].semilogx(
+        [10000, 100000, 1000000, 10000000],
+        [4.54, 41.12, 990.00, 14280.00],
+        label="Spatial-hashing-2D",
+        marker="s",
+    )
+    axes[0].semilogx(
+        [10000, 100000, 1000000, 10000000],
+        [8.33, 79.06, 2367.00, 28670.00],
+        label="Spatial-hashing-3D",
+        marker="^",
+    )
+    axes[0].set_xscale("log")
+    axes[0].set_yscale("log")
+    axes[0].set_xlabel("粒子数/个")
+    axes[0].set_ylabel("单步耗时/ms")
+    axes[0].set_title("均匀分布")
+
+    axes[1].semilogx(
+        [10000, 100000, 1000000, 1000000],
+        [2.97, 43.81, 3436.00, 3436.00],
+        label="Index-sort-2D",
+        marker="o",
+        ls="--",
+    )
+    axes[1].semilogx(
+        [10000, 100000, 1000000, 1000000],
+        [3.92, 47.99, 2503.00, 2503.00],
+        label="Index-sort-3D",
+        marker="x",
+        ls="--",
+    )
+    axes[1].semilogx(
+        [10000, 100000, 1000000, 1000000],
+        [5.13, 54.29, 2512.00, 2512.00],
+        label="Spatial-hashing-2D",
+        marker="s",
+    )
+    axes[1].semilogx(
+        [10000, 100000, 1000000, 10000000],
+        [8.77, 69.27, 1478.00, 22550.00],
+        label="Spatial-hashing-3D",
+        marker="^",
+    )
+    axes[1].set_xscale("log")
+    axes[1].set_yscale("log")
+    axes[1].set_title("正态分布")
+    axes[1].set_xlabel("粒子数/个")
+    axes[1].set_ylabel("单步耗时/ms")
+
+    axes[2].semilogx(
+        [10000, 100000, 1000000, 10000000],
+        [343.91, 344.75, 384.42, 2519.46],
+        label="Index-sort-2D",
+        marker="o",
+        ls="--",
+    )
+    axes[2].semilogx(
+        [10000, 100000, 1000000, 10000000],
+        [359.96, 361.47, 411.39, 2584.77],
+        label="Index-sort-3D",
+        marker="x",
+        ls="--",
+    )
+    axes[2].semilogx(
+        [10000, 100000, 1000000, 10000000],
+        [9.41, 31.18, 253.18, 4116.66],
+        label="Spatial-hashing-2D",
+        marker="s",
+    )
+    axes[2].semilogx(
+        [10000, 100000, 1000000, 10000000],
+        [9.49, 31.98, 282.29, 8533.71],
+        label="Spatial-hashing-3D",
+        marker="^",
+    )
+    axes[2].set_xscale("log")
+    axes[2].set_yscale("log")
+    axes[2].set_xlabel("粒子数/个")
+    axes[2].set_ylabel("内存占用/MB")
+    axes[2].set_title("均匀分布")
+
+    axes[3].semilogx(
+        [10000, 100000, 1000000, 1000000],
+        [50.58, 83.49, 618.06, 618.06],
+        label="Index-sort-2D",
+        marker="o",
+        ls="--",
+    )
+    axes[3].semilogx(
+        [10000, 100000, 1000000, 1000000],
+        [53.42, 58.51, 198.77, 198.77],
+        label="Index-sort-3D",
+        marker="x",
+        ls="--",
+    )
+    axes[3].semilogx(
+        [10000, 100000, 1000000, 10000000],
+        [9.42, 48.87, 1351.06, 17735.29],
+        label="Spatial-hashing-2D",
+        marker="s",
+    )
+    axes[3].semilogx(
+        [10000, 100000, 1000000, 1000000],
+        [9.49, 32.61, 259.72, 259.72],
+        label="Spatial-hashing-3D",
+        marker="^",
+    )
+    axes[3].set_xscale("log")
+    axes[3].set_yscale("log")
+    axes[3].set_title("正态分布")
+    axes[3].set_xlabel("粒子数/个")
+    axes[3].set_ylabel("内存占用/MB")
+
+    lines, labels = fig.axes[-1].get_legend_handles_labels()
+    fig.legend(
+        lines,
+        labels,
+        loc="center",
+        facecolor="white",
+        framealpha=0.75,
+        frameon=True,
+        bbox_to_anchor=(0.522, 0.506),
+        ncol=2,
+    )
+
+    plt.tight_layout()
+    plt.savefig("plot2.svg")
+    plt.show()
+</code></pre>
+<p>借助 Inkscape，将 svg 转为 emf 获得不错的矢量图像。</p>
+<h2 id="161-参考链接"><a class="header" href="#161-参考链接">16.1 参考链接</a></h2>
+<ul>
+<li><a href="https://matplotlib.org/cheatsheets/">Matplotlib cheatsheets</a>。</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="17-复刻-windows-环境2024"><a class="header" href="#17-复刻-windows-环境2024">17. 复刻 Windows 环境（2024）</a></h1>
+<p>2024 年换机，记录当前顺手的 Windows 环境。</p>
+<ol>
+<li><a href="Y2024/M4/./ch17.1.html">Desktop Apps</a>；</li>
+<li><a href="Y2024/M4/./ch17.2.html">Microsoft Store Apps</a>；</li>
+<li><a href="Y2024/M4/./ch17.3.html">MSYS2 Pkgs</a>；</li>
+<li><a href="Y2024/M4/./ch17.4.html">Powershell 配置</a>；</li>
+<li>Geek Uninstaller、AutoClock、Traffic Monitor、迅雷 11、B0pass、LS-DYNA、Fliqlo.scr等。</li>
+<li><a href="https://zhuanlan.zhihu.com/p/633610238">停止 Windows 更新</a>。</li>
+</ol>
+<div align="center">
+<img src="https://img2.imgtp.com/2024/04/29/jOanXDsL.png" alt="1714382044505.png" title="1714382044505.png" width="640"></div>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="171-desktop-apps"><a class="header" href="#171-desktop-apps">17.1 Desktop Apps</a></h1>
+<div class="my-custom-class">
+    <html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.title{font: bold 10pt "Tahoma";color:#000000;}
+.default{font: 8pt "Tahoma";color:#000000;}
+.header{font: 8pt "Tahoma";color:#000000;}
+.noborder{border-style:none;padding-left:4px;padding-right:4px;}
+.normalborder {border-top:none; border-left:none; vertical-align:top;border-right:none;border-bottom:none;padding-left:4px;padding-right:4px;}
+</style>
+</head>
+<body>
+<p class="title">
+已安装程序 (Software)
+</p>
+<p class="default">
+由 <a href="https://geekuninstaller.com/">Geek Uninstaller 1.5.1</a> 于 Saturday, April 27, 2024 11:50:41 生成<br>WIN-PEOQDUKOHTK
+</p>
+<table class="default" bgcolor=#FFFFFF  cellspacing="0" cellpadding=4>
+<tr class="header" style="padding-left:4px;padding-right:4px;">
+<th height="20px" align=left colspan="2" bgcolor=#ECE9D8 width="600px">程序名称</th><th height="20px" align=left bgcolor=#ECE9D8 width="80px">大小</th><th height="20px" align=right bgcolor=#ECE9D8 width="120px">安装时间</th></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Edge WebView2 Runtime</td> <td class="normalborder"
+height="34px" align=left>5.06 GB</td> <td class="normalborder"  height="34px" align=right>27.04.2024 08:50</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Lenovo Vantage Service</td> <td class="normalborder"
+height="34px" align=left>2.93 GB</td> <td class="normalborder"  height="34px" align=right>27.04.2024 00:12</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Fork - a fast and friendly git client</td> <td class="normalborder"
+height="34px" align=left>570 MB</td> <td class="normalborder"  height="34px" align=right>26.04.2024 18:56</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.38.33135</td> <td class="normalborder"
+height="34px" align=left>20.6 MB</td> <td class="normalborder"  height="34px" align=right>22.04.2024 19:43</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">imFile 1.0.7</td> <td class="normalborder"
+height="34px" align=left>274 MB</td> <td class="normalborder"  height="34px" align=right>22.04.2024 10:53</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">QQ</td> <td class="normalborder"
+height="34px" align=left>598 MB</td> <td class="normalborder"  height="34px" align=right>22.04.2024 10:29</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">AntiCheatExpert</td> <td class="normalborder"
+height="34px" align=left>73.1 MB</td> <td class="normalborder"  height="34px" align=right>14.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">START</td> <td class="normalborder"
+height="34px" align=left>383 MB</td> <td class="normalborder"  height="34px" align=right>14.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">WPS Office (12.1.0.16729)</td> <td class="normalborder"
+height="34px" align=left>0.99 GB</td> <td class="normalborder"  height="34px" align=right>14.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual Studio Code</td> <td class="normalborder"
+height="34px" align=left>356 MB</td> <td class="normalborder"  height="34px" align=right>13.04.2024 20:18</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">DropIt (v8.5.1)</td> <td class="normalborder"
+height="34px" align=left>7.68 MB</td> <td class="normalborder"  height="34px" align=right>12.04.2024 07:50</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Waterfox (x64 en-US)</td> <td class="normalborder"
+height="34px" align=left>1.42 GB</td> <td class="normalborder"  height="34px" align=right>12.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft .NET Runtime - 8.0.4 (x64)</td> <td class="normalborder"
+height="34px" align=left>98.2 MB</td> <td class="normalborder"  height="34px" align=right>11.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">XTerminal 1.20.23</td> <td class="normalborder"
+height="34px" align=left>500 MB</td> <td class="normalborder"  height="34px" align=right>11.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">搜狗输入法 14.4.0正式版</td> <td class="normalborder"
+height="34px" align=left>474 MB</td> <td class="normalborder"  height="34px" align=right>11.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Windows Desktop Runtime - 8.0.4 (x64)</td> <td class="normalborder"
+height="34px" align=left>216 MB</td> <td class="normalborder"  height="34px" align=right>11.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">RayLink 8.0.3.8</td> <td class="normalborder"
+height="34px" align=left>221 MB</td> <td class="normalborder"  height="34px" align=right>10.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Intel(R) Management Engine Components</td> <td class="normalborder"
+height="34px" align=left>193 MB</td> <td class="normalborder"  height="34px" align=right>08.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">PowerToys (Preview) x64</td> <td class="normalborder"
+height="34px" align=left>899 MB</td> <td class="normalborder"  height="34px" align=right>07.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">R for Windows 4.3.3</td> <td class="normalborder"
+height="34px" align=left>173 MB</td> <td class="normalborder"  height="34px" align=right>06.04.2024 21:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">RStudio</td> <td class="normalborder"
+height="34px" align=left>903 MB</td> <td class="normalborder"  height="34px" align=right>06.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft OneDrive</td> <td class="normalborder"
+height="34px" align=left>4.73 GB</td> <td class="normalborder"  height="34px" align=right>05.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Edge Update</td> <td class="normalborder"
+height="34px" align=left>4.41 GB</td> <td class="normalborder"  height="34px" align=right>04.04.2024 21:08</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">腾讯会议</td> <td class="normalborder"
+height="34px" align=left>531 MB</td> <td class="normalborder"  height="34px" align=right>03.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Office 家庭和学生版 2016 - zh-cn</td> <td class="normalborder"
+height="34px" align=left>3.07 GB</td> <td class="normalborder"  height="34px" align=right>02.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visio - zh-cn</td> <td class="normalborder"
+height="34px" align=left>7.44 GB</td> <td class="normalborder"  height="34px" align=right>02.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">汽水音乐 1.6.1</td> <td class="normalborder"
+height="34px" align=left>794 MB</td> <td class="normalborder"  height="34px" align=right>01.04.2024 11:27</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">qBittorrent</td> <td class="normalborder"
+height="34px" align=left>176 MB</td> <td class="normalborder"  height="34px" align=right>01.04.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Fluent Reader 1.1.4</td> <td class="normalborder"
+height="34px" align=left>253 MB</td> <td class="normalborder"  height="34px" align=right>30.03.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">EditPad Pro 7 v.7.3.1</td> <td class="normalborder"
+height="34px" align=left>21.6 MB</td> <td class="normalborder"  height="34px" align=right>29.03.2024 22:13</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Oracle VM VirtualBox 7.0.14</td> <td class="normalborder"
+height="34px" align=left>211 MB</td> <td class="normalborder"  height="34px" align=right>28.03.2024 23:44</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">爱校对插件</td> <td class="normalborder"
+height="34px" align=left>8.05 MB</td> <td class="normalborder"  height="34px" align=right>27.03.2024 14:52</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Grammarly for Windows</td> <td class="normalborder"
+height="34px" align=left>140 MB</td> <td class="normalborder"  height="34px" align=right>27.03.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">FxSound</td> <td class="normalborder"
+height="34px" align=left>64.2 MB</td> <td class="normalborder"  height="34px" align=right>26.03.2024 18:19</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Cloudflare WARP</td> <td class="normalborder"
+height="34px" align=left>281 MB</td> <td class="normalborder"  height="34px" align=right>26.03.2024 17:48</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">百度网盘</td> <td class="normalborder"
+height="34px" align=left>847 MB</td> <td class="normalborder"  height="34px" align=right>21.03.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">微软OfficePLUS</td> <td class="normalborder"
+height="34px" align=left>65.1 MB</td> <td class="normalborder"  height="34px" align=right>21.03.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Visual Basic for Application 7.0.1590</td> <td class="normalborder"
+height="34px" align=left></td> <td class="normalborder"  height="34px" align=right>18.03.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Zotero</td> <td class="normalborder"
+height="34px" align=left>458 MB</td> <td class="normalborder"  height="34px" align=right>15.03.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Edge</td> <td class="normalborder"
+height="34px" align=left>169 MB</td> <td class="normalborder"  height="34px" align=right>11.03.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">网易云音乐</td> <td class="normalborder"
+height="34px" align=left>375 MB</td> <td class="normalborder"  height="34px" align=right>10.03.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Todo清单 3.6.4</td> <td class="normalborder"
+height="34px" align=left>230 MB</td> <td class="normalborder"  height="34px" align=right>10.03.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Q-Dir</td> <td class="normalborder"
+height="34px" align=left>4.64 MB</td> <td class="normalborder"  height="34px" align=right>24.02.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">WinFsp 2023</td> <td class="normalborder"
+height="34px" align=left>1.43 MB</td> <td class="normalborder"  height="34px" align=right>23.02.2024 07:26</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">CloudDrive2 版本 1.0</td> <td class="normalborder"
+height="34px" align=left>43.3 MB</td> <td class="normalborder"  height="34px" align=right>23.02.2024 07:26</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">pot</td> <td class="normalborder"
+height="34px" align=left>43.3 MB</td> <td class="normalborder"  height="34px" align=right>16.02.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">爱思助手7.0</td> <td class="normalborder"
+height="34px" align=left>749 MB</td> <td class="normalborder"  height="34px" align=right>17.01.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">PowerShell 7-x64</td> <td class="normalborder"
+height="34px" align=left>267 MB</td> <td class="normalborder"  height="34px" align=right>12.01.2024 12:50</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">uTools 4.0.1</td> <td class="normalborder"
+height="34px" align=left>296 MB</td> <td class="normalborder"  height="34px" align=right>12.01.2024 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">MSC.Licensing 11.13</td> <td class="normalborder"
+height="34px" align=left>27.0 MB</td> <td class="normalborder"  height="34px" align=right>11.01.2024 10:16</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Revision Tool version 1.6.2</td> <td class="normalborder"
+height="34px" align=left>35.7 MB</td> <td class="normalborder"  height="34px" align=right>01.01.2024 00:13</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">WinSCP 6.1.2</td> <td class="normalborder"
+height="34px" align=left>89.5 MB</td> <td class="normalborder"  height="34px" align=right>19.12.2023 01:15</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2005 Redistributable</td> <td class="normalborder"
+height="34px" align=left>5.06 MB</td> <td class="normalborder"  height="34px" align=right>28.11.2023 00:29</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">TreeSize Free V4.7.1 (64 bit)</td> <td class="normalborder"
+height="34px" align=left>49.2 MB</td> <td class="normalborder"  height="34px" align=right>28.11.2023 00:09</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">哈工程VPN</td> <td class="normalborder"
+height="34px" align=left>39.5 MB</td> <td class="normalborder"  height="34px" align=right>08.11.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">LibreOffice 7.5.8.2</td> <td class="normalborder"
+height="34px" align=left>696 MB</td> <td class="normalborder"  height="34px" align=right>05.11.2023 17:57</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">LibreOffice 7.5 Help Pack (Chinese (simplified))</td> <td class="normalborder"
+height="34px" align=left>696 MB</td> <td class="normalborder"  height="34px" align=right>05.11.2023 17:44</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">PPSSPP</td> <td class="normalborder"
+height="34px" align=left>85.3 MB</td> <td class="normalborder"  height="34px" align=right>31.10.2023 18:36</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">钉钉</td> <td class="normalborder"
+height="34px" align=left>2.54 GB</td> <td class="normalborder"  height="34px" align=right>31.10.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">carnac</td> <td class="normalborder"
+height="34px" align=left>20.2 MB</td> <td class="normalborder"  height="34px" align=right>23.10.2023 12:42</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">VLC media player</td> <td class="normalborder"
+height="34px" align=left>179 MB</td> <td class="normalborder"  height="34px" align=right>20.10.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">ParaView</td> <td class="normalborder"
+height="34px" align=left>1.49 GB</td> <td class="normalborder"  height="34px" align=right>04.10.2023 23:44</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Intel® oneAPI Base Toolkit</td> <td class="normalborder"
+height="34px" align=left>13.9 GB</td> <td class="normalborder"  height="34px" align=right>24.09.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Intel® oneAPI HPC Toolkit</td> <td class="normalborder"
+height="34px" align=left>13.9 GB</td> <td class="normalborder"  height="34px" align=right>24.09.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">MathType 6</td> <td class="normalborder"
+height="34px" align=left>20.5 MB</td> <td class="normalborder"  height="34px" align=right>13.09.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">TIM</td> <td class="normalborder"
+height="34px" align=left>407 MB</td> <td class="normalborder"  height="34px" align=right>12.09.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Update Health Tools</td> <td class="normalborder"
+height="34px" align=left>1.02 MB</td> <td class="normalborder"  height="34px" align=right>25.08.2023 14:15</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Patran 2019</td> <td class="normalborder"
+height="34px" align=left>3.74 GB</td> <td class="normalborder"  height="34px" align=right>17.08.2023 09:59</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161</td> <td class="normalborder"
+height="34px" align=left>10.1 MB</td> <td class="normalborder"  height="34px" align=right>17.08.2023 09:59</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2010  x86 Redistributable - 10.0.30319</td> <td class="normalborder"
+height="34px" align=left>9.71 MB</td> <td class="normalborder"  height="34px" align=right>17.08.2023 09:59</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17</td> <td class="normalborder"
+height="34px" align=left>10.2 MB</td> <td class="normalborder"  height="34px" align=right>17.08.2023 09:59</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2010  x64 Redistributable - 10.0.30319</td> <td class="normalborder"
+height="34px" align=left>12.3 MB</td> <td class="normalborder"  height="34px" align=right>17.08.2023 09:58</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Dassault Systemes Software VC9 Prerequisites x86-x64</td> <td class="normalborder"
+height="34px" align=left>21.9 MB</td> <td class="normalborder"  height="34px" align=right>17.08.2023 09:58</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.17</td> <td class="normalborder"
+height="34px" align=left>12.4 MB</td> <td class="normalborder"  height="34px" align=right>17.08.2023 09:58</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">阿里云盘</td> <td class="normalborder"
+height="34px" align=left>325 MB</td> <td class="normalborder"  height="34px" align=right>17.08.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">向日葵远程控制</td> <td class="normalborder"
+height="34px" align=left>90.4 MB</td> <td class="normalborder"  height="34px" align=right>17.08.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030</td> <td class="normalborder"
+height="34px" align=left>20.5 MB</td> <td class="normalborder"  height="34px" align=right>17.08.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030</td> <td class="normalborder"
+height="34px" align=left>17.3 MB</td> <td class="normalborder"  height="34px" align=right>17.08.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">7-Zip 23.01 (x64)</td> <td class="normalborder"
+height="34px" align=left>5.52 MB</td> <td class="normalborder"  height="34px" align=right>14.08.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">SumatraPDF</td> <td class="normalborder"
+height="34px" align=left>38.3 MB</td> <td class="normalborder"  height="34px" align=right>13.08.2023 16:03</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Inkscape</td> <td class="normalborder"
+height="34px" align=left>535 MB</td> <td class="normalborder"  height="34px" align=right>13.08.2023 16:02</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">ToDesk</td> <td class="normalborder"
+height="34px" align=left>259 MB</td> <td class="normalborder"  height="34px" align=right>11.08.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">WeChat</td> <td class="normalborder"
+height="34px" align=left>574 MB</td> <td class="normalborder"  height="34px" align=right>22.07.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Chocolatey (Install Only)</td> <td class="normalborder"
+height="34px" align=left>4.88 MB</td> <td class="normalborder"  height="34px" align=right>20.07.2023 11:17</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Bonjour</td> <td class="normalborder"
+height="34px" align=left>616 KB</td> <td class="normalborder"  height="34px" align=right>25.06.2023 21:18</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Apple Mobile Device Support</td> <td class="normalborder"
+height="34px" align=left>45.3 MB</td> <td class="normalborder"  height="34px" align=right>25.06.2023 21:18</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Miniforge3 23.1.0-1 (Python 3.10.10 64-bit)</td> <td class="normalborder"
+height="34px" align=left>5.49 GB</td> <td class="normalborder"  height="34px" align=right>19.06.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">oCam版本520.0</td> <td class="normalborder"
+height="34px" align=left>30.6 MB</td> <td class="normalborder"  height="34px" align=right>19.05.2023 10:27</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">剪映专业版</td> <td class="normalborder"
+height="34px" align=left></td> <td class="normalborder"  height="34px" align=right>19.05.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Inno Setup version 6.2.2</td> <td class="normalborder"
+height="34px" align=left>15.1 MB</td> <td class="normalborder"  height="34px" align=right>12.05.2023 10:56</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Honeyview</td> <td class="normalborder"
+height="34px" align=left>38.8 MB</td> <td class="normalborder"  height="34px" align=right>12.05.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">CAJViewer</td> <td class="normalborder"
+height="34px" align=left>128 MB</td> <td class="normalborder"  height="34px" align=right>13.03.2023 11:17</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Windows Desktop Runtime - 6.0.14 (x64)</td> <td class="normalborder"
+height="34px" align=left>210 MB</td> <td class="normalborder"  height="34px" align=right>28.02.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501</td> <td class="normalborder"
+height="34px" align=left>20.5 MB</td> <td class="normalborder"  height="34px" align=right>23.02.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501</td> <td class="normalborder"
+height="34px" align=left>17.1 MB</td> <td class="normalborder"  height="34px" align=right>23.02.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft MPI (10.1.12498.16)</td> <td class="normalborder"
+height="34px" align=left>4.37 GB</td> <td class="normalborder"  height="34px" align=right>21.02.2023 20:42</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft MPI SDK (10.1.12498.16)</td> <td class="normalborder"
+height="34px" align=left>8.20 MB</td> <td class="normalborder"  height="34px" align=right>21.02.2023 20:42</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">知云文献翻译 版本 7.8.0</td> <td class="normalborder"
+height="34px" align=left>334 MB</td> <td class="normalborder"  height="34px" align=right>16.02.2023 19:46</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161</td> <td class="normalborder"
+height="34px" align=left>13.2 MB</td> <td class="normalborder"  height="34px" align=right>13.02.2023 15:41</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2005 Redistributable (x64)</td> <td class="normalborder"
+height="34px" align=left>6.83 MB</td> <td class="normalborder"  height="34px" align=right>13.02.2023 15:41</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">QTTabBar ver 2048</td> <td class="normalborder"
+height="34px" align=left>8.20 MB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 14:14</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">福昕高级PDF编辑器</td> <td class="normalborder"
+height="34px" align=left>932 MB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 14:12</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Windows SDK AddOn</td> <td class="normalborder"
+height="34px" align=left>152 KB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 13:39</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft .NET Framework 4 Multi-Targeting Pack</td> <td class="normalborder"
+height="34px" align=left>83.4 MB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 13:34</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual Studio Installer</td> <td class="normalborder"
+height="34px" align=left>59.8 MB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 13:31</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Notepad3 (x64) 6.23.203.2</td> <td class="normalborder"
+height="34px" align=left>22.5 MB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 13:30</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">MSYS2</td> <td class="normalborder"
+height="34px" align=left>12.7 GB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 13:09</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Realtek Card Reader</td> <td class="normalborder"
+height="34px" align=left>15.1 MB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 12:54</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Neat Download Manager version 1.4</td> <td class="normalborder"
+height="34px" align=left>2.31 MB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 12:32</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Visual Studio Community 2019</td> <td class="normalborder"
+height="34px" align=left>2.90 GB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Windows Software Development Kit - Windows 10.0.19041.685</td> <td class="normalborder"
+height="34px" align=left>2.00 GB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.29.30139</td> <td class="normalborder"
+height="34px" align=left>17.9 MB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 00:00</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Everything 1.4.1.935 (x64)</td> <td class="normalborder"
+height="34px" align=left>50.7 MB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 00:00</td></tr>
+</table><hr><p class="default">
+总计 <b>113</b> 个程序占用空间 <b>111 GB</b>
+</p></body></html>
+</div>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="172-microsoft-store-apps"><a class="header" href="#172-microsoft-store-apps">17.2 Microsoft Store Apps</a></h1>
+<div class="my-custom-class">
+    <html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.title{font: bold 10pt "Tahoma";color:#000000;}
+.default{font: 8pt "Tahoma";color:#000000;}
+.header{font: 8pt "Tahoma";color:#000000;}
+.noborder{border-style:none;padding-left:4px;padding-right:4px;}
+.normalborder {border-top:none; border-left:none; vertical-align:top;border-right:none;border-bottom:none;padding-left:4px;padding-right:4px;}
+</style>
+</head>
+<body>
+<p class="title">
+已安装程序 (Software)
+</p>
+<p class="default">
+由 <a href="https://geekuninstaller.com/">Geek Uninstaller 1.5.1</a> 于 Wednesday, April 10, 2024 07:32:14 生成<br>WIN-PEOQDUKOHTK
+</p>
+<table class="default" bgcolor=#FFFFFF  cellspacing="0" cellpadding=4>
+<tr class="header" style="padding-left:4px;padding-right:4px;">
+<th height="20px" align=left colspan="2" bgcolor=#ECE9D8 width="600px">程序名称</th><th height="20px" align=left bgcolor=#ECE9D8 width="80px">大小</th><th height="20px" align=right bgcolor=#ECE9D8 width="120px">安装时间</th></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Edge</td> <td class="normalborder"
+height="34px" align=left>83.0 KB</td> <td class="normalborder"  height="34px" align=right>07.04.2024 23:03</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Windows Package Manager Source (winget)</td> <td class="normalborder"
+height="34px" align=left>9.87 MB</td> <td class="normalborder"  height="34px" align=right>06.04.2024 20:52</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Copilot</td> <td class="normalborder"
+height="34px" align=left>138 KB</td> <td class="normalborder"  height="34px" align=right>28.03.2024 23:20</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">云·星穹铁道</td> <td class="normalborder"
+height="34px" align=left>356 KB</td> <td class="normalborder"  height="34px" align=right>21.03.2024 17:22</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Notion</td> <td class="normalborder"
+height="34px" align=left>69.0 KB</td> <td class="normalborder"  height="34px" align=right>18.03.2024 16:13</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">QQ邮箱</td> <td class="normalborder"
+height="34px" align=left>195 KB</td> <td class="normalborder"  height="34px" align=right>13.03.2024 23:12</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Spotify</td> <td class="normalborder"
+height="34px" align=left>88.0 KB</td> <td class="normalborder"  height="34px" align=right>13.03.2024 23:03</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">YouTube</td> <td class="normalborder"
+height="34px" align=left>50.0 KB</td> <td class="normalborder"  height="34px" align=right>11.03.2024 11:47</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Debian</td> <td class="normalborder"
+height="34px" align=left>490 MB</td> <td class="normalborder"  height="34px" align=right>10.03.2024 10:47</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">抖音</td> <td class="normalborder"
+height="34px" align=left>60.0 KB</td> <td class="normalborder"  height="34px" align=right>04.03.2024 16:25</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Pantone Color of the Year 2022</td> <td class="normalborder"
+height="34px" align=left>3.33 MB</td> <td class="normalborder"  height="34px" align=right>01.01.2024 00:29</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Lenovo Vantage</td> <td class="normalborder"
+height="34px" align=left>645 MB</td> <td class="normalborder"  height="34px" align=right>09.12.2023 18:48</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">App Installer</td> <td class="normalborder"
+height="34px" align=left>142 MB</td> <td class="normalborder"  height="34px" align=right>19.11.2023 22:50</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">WinGet COM Server</td> <td class="normalborder"
+height="34px" align=left>142 MB</td> <td class="normalborder"  height="34px" align=right>19.11.2023 22:50</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Windows Package Manager Client</td> <td class="normalborder"
+height="34px" align=left>142 MB</td> <td class="normalborder"  height="34px" align=right>19.11.2023 22:50</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">App Installer</td> <td class="normalborder"
+height="34px" align=left>142 MB</td> <td class="normalborder"  height="34px" align=right>19.11.2023 22:50</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">wolai</td> <td class="normalborder"
+height="34px" align=left>65.0 KB</td> <td class="normalborder"  height="34px" align=right>10.11.2023 16:57</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">终端</td> <td class="normalborder"
+height="34px" align=left>17.5 MB</td> <td class="normalborder"  height="34px" align=right>06.11.2023 12:28</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Store</td> <td class="normalborder"
+height="34px" align=left>68.0 MB</td> <td class="normalborder"  height="34px" align=right>05.11.2023 18:05</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Calculator</td> <td class="normalborder"
+height="34px" align=left>18.9 MB</td> <td class="normalborder"  height="34px" align=right>05.11.2023 18:04</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">中文(简体)本地体验包</td> <td class="normalborder"
+height="34px" align=left>62.1 MB</td> <td class="normalborder"  height="34px" align=right>05.11.2023 18:02</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">有道云笔记</td> <td class="normalborder"
+height="34px" align=left>104 KB</td> <td class="normalborder"  height="34px" align=right>02.11.2023 10:47</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">NxShell</td> <td class="normalborder"
+height="34px" align=left>323 MB</td> <td class="normalborder"  height="34px" align=right>01.09.2023 13:30</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Store Experience Host</td> <td class="normalborder"
+height="34px" align=left>34.2 MB</td> <td class="normalborder"  height="34px" align=right>24.08.2023 14:19</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">HEIF Image Extensions</td> <td class="normalborder"
+height="34px" align=left>5.57 MB</td> <td class="normalborder"  height="34px" align=right>24.08.2023 14:19</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Intel® Graphics Command Center</td> <td class="normalborder"
+height="34px" align=left>122 MB</td> <td class="normalborder"  height="34px" align=right>13.08.2023 12:50</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">百度网盘</td> <td class="normalborder"
+height="34px" align=left>4.36 MB</td> <td class="normalborder"  height="34px" align=right>09.08.2023 15:07</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Webp Image Extensions</td> <td class="normalborder"
+height="34px" align=left>914 KB</td> <td class="normalborder"  height="34px" align=right>09.08.2023 15:06</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Web 媒体扩展</td> <td class="normalborder"
+height="34px" align=left>2.71 MB</td> <td class="normalborder"  height="34px" align=right>02.07.2023 00:53</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">VP9 Video Extensions</td> <td class="normalborder"
+height="34px" align=left>5.58 MB</td> <td class="normalborder"  height="34px" align=right>24.06.2023 12:22</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Snip & Sketch</td> <td class="normalborder"
+height="34px" align=left>3.81 MB</td> <td class="normalborder"  height="34px" align=right>31.03.2023 09:57</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">ELAN TrackPoint for Thinkpad</td> <td class="normalborder"
+height="34px" align=left>1.14 MB</td> <td class="normalborder"  height="34px" align=right>14.02.2023 15:48</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">ELAN Touchpad for Thinkpad</td> <td class="normalborder"
+height="34px" align=left>997 KB</td> <td class="normalborder"  height="34px" align=right>14.02.2023 15:48</td></tr>
+<tr class="default">
+<td class="normalborder"  height="34px" align=left colspan="2">Microsoft Pay</td> <td class="normalborder"
+height="34px" align=left>4.96 MB</td> <td class="normalborder"  height="34px" align=right>11.02.2023 12:17</td></tr>
+</table><hr><p class="default">
+总计 <b>34</b> 个程序占用空间 <b>2.34 GB</b>
+</p></body></html>
+</div>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="173-msys2-环境"><a class="header" href="#173-msys2-环境">17.3 MSYS2 环境</a></h1>
+<p>2024 年 4 月开始，更换笔记本，将新笔记本的 <a href="https://my.oschina.net/zuozhihua/blog/8757266">MSYS2 环境设为 UCRT64</a>。</p>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/msys2/distrib/x86_64/">MSYS2</a> 是作者主力编程和开源工具环境，提供了诸如 GCC、Python 等编程环境，也提供了诸如 mdbook、LaTex、inkscape
+等工具。</p>
+<p>常用命令：</p>
+<pre><code class="language-sh">pacman -Syu         # 更新包索引
+pacman -S &lt;pkg&gt;     # 安装包
+pacman -Rs &lt;pkg&gt;    # 删除包
+</code></pre>
+<p>国内开发者可以使用<a href="https://mirrors.tuna.tsinghua.edu.cn/help/msys2/">清华大学的镜像</a>。</p>
+<pre><code class="language-sh">$ pacman -Qe
+mingw-w64-clang-x86_64-clang 17.0.6-7
+mingw-w64-clang-x86_64-cmake 3.28.3-2
+mingw-w64-clang-x86_64-llvm-15 15.0.7-2
+mingw-w64-clang-x86_64-ninja 1.11.1-3
+mingw-w64-x86_64-argparse-f 0.1.0-1
+mingw-w64-x86_64-binutils 2.41-1
+mingw-w64-x86_64-cmake 3.27.2-1
+mingw-w64-x86_64-crt-git 11.0.0.r107.gd367cc9d7-1
+mingw-w64-x86_64-fastfetch 2.1.2-1
+mingw-w64-x86_64-fffc 1.5.202310-1
+mingw-w64-x86_64-flang 17.0.6-1
+mingw-w64-x86_64-fortran-stdlib 0.3.0-1
+mingw-w64-x86_64-fpm 0.10.0-1
+mingw-w64-x86_64-fzf 0.48.1-1
+mingw-w64-x86_64-gcc 13.2.0-2
+mingw-w64-x86_64-gcc-fortran 13.2.0-2
+mingw-w64-x86_64-gcc-libgfortran 13.2.0-2
+mingw-w64-x86_64-gcc-libs 13.2.0-2
+mingw-w64-x86_64-gcc-objc 13.2.0-2
+mingw-w64-x86_64-gdb 13.2-3
+mingw-w64-x86_64-github-cli 2.32.0-1
+mingw-w64-x86_64-go 1.21.0-2
+mingw-w64-x86_64-h5part 1.2.20230625-1
+mingw-w64-x86_64-headers-git 11.0.0.r107.gd367cc9d7-2
+mingw-w64-x86_64-kiss_fft 1.3.1-1
+mingw-w64-x86_64-lfortran 0.33.1-2
+mingw-w64-x86_64-libgccjit 13.2.0-2
+mingw-w64-x86_64-libmangle-git 11.0.0.r107.gd367cc9d7-1
+mingw-w64-x86_64-libwinpthread-git 11.0.0.r107.gd367cc9d7-1
+mingw-w64-x86_64-llvm-15 15.0.7-1
+mingw-w64-x86_64-lua 5.4.6-2
+mingw-w64-x86_64-make 4.4-2
+mingw-w64-x86_64-mdbook 0.4.37-1
+mingw-w64-x86_64-meson 1.2.1-1
+mingw-w64-x86_64-minpack 2.0.0-1
+mingw-w64-x86_64-nnps 1.3.0-1
+mingw-w64-x86_64-octave 9.1.0-4
+mingw-w64-x86_64-onefetch 2.18.1-3
+mingw-w64-x86_64-pkgconf 1~2.0.1-1
+mingw-w64-x86_64-python-ipykernel 6.25.2-1
+mingw-w64-x86_64-python-jupyter_notebook 7.0.6-1
+mingw-w64-x86_64-python-matplotlib 3.7.1-2
+mingw-w64-x86_64-python-pandas 2.2.1-1
+mingw-w64-x86_64-python-pip 23.2.1-2
+mingw-w64-x86_64-python-scipy 1.11.1-2
+mingw-w64-x86_64-python-toml 0.10.2-4
+mingw-w64-x86_64-python-websocket-client 1.6.2-1
+mingw-w64-x86_64-quadrature-fortran 1.0.0-1
+mingw-w64-x86_64-rust 1.72.0-1
+mingw-w64-x86_64-scc 3.1.0-1
+mingw-w64-x86_64-sccache 0.5.4-1
+mingw-w64-x86_64-seakeeping 2.7.202312-1
+mingw-w64-x86_64-starship 1.17.1-2
+mingw-w64-x86_64-test-drive 0.4.0-1
+mingw-w64-x86_64-tools-git 11.0.0.r107.gd367cc9d7-1
+mingw-w64-x86_64-winpthreads-git 11.0.0.r107.gd367cc9d7-1
+mingw-w64-x86_64-winstorecompat-git 11.0.0.r107.gd367cc9d7-1
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="174-powershell-配置"><a class="header" href="#174-powershell-配置">17.4 Powershell 配置</a></h1>
+<ul>
+<li><a href="https://starship.rs/">Starship</a>：跨平台的 Shell 提示符；</li>
+<li><a href="https://github.com/PowerShell/PSReadLine">PSReadLine</a>：PowerShell 命令行界面。</li>
+</ul>
+<pre><code class="language-powershell"># PWD: C:\Users\zoziha\Documents\WindowsPowerShell 或者 C:\Users\zoziha\Documents\PowerShell
+# 命令：notepad $PROFILE
+# 依赖：
+# - Startship
+# - PSReadLine
+
+Import-Module PSReadLine
+Set-PSReadLineOption -PredictionSource History
+# 下面是三条是文档里推荐的，根据自己的习惯决定是否添加
+# 其他有用的命令是：
+# - F2 选择历史命令;
+# - Ctrl-l 清屏;
+# - Ctrl-左右键 跳转.
+Set-PSReadLineKeyHandler -Key Tab -Function Complete
+Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
+
+Invoke-Expression (starship init powershell)        # Starship
+[System.Console]::OutputEncoding=[System.Text.Encoding]::GetEncoding(65001)     # utf-8
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="18-华为手环"><a class="header" href="#18-华为手环">18. 华为手环</a></h1>
+<ul>
+<li>👍<strong>年轻人的常用设备</strong>：年轻人常用的设备有手机、笔记本电脑、平板电脑和手环等。</li>
+<li>😎<strong>华为手环的优点</strong>：华为手环 9 的顶层设计先进完善，将其纳入鸿蒙系统体系，具有良好的软、硬件产品力。</li>
+<li>🤔<strong>与小米手环的对比</strong>：作者使用过小米手环，认为小米手环 7 及以前由华米代工，且 8 未提供先进完善的嵌入式系统框架。</li>
+<li>😜<strong>对华为产品的好感</strong>：由于华为在底层编译体系的支持和鸿蒙系统，作者开始对华为的产品提升好感，并推荐华为手环数字系列产品。</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="19-开箱即用的-octave"><a class="header" href="#19-开箱即用的-octave">19. 开箱即用的 Octave</a></h1>
+<p>相比于 Python、R、Fortran、Julia 等科学计算编程语言，Octave 是类 Matlab 的开源的、开箱即用的科学计算工具。</p>
+<pre><code class="language-sh">pacman -Ss octave
+pacman -S mingw64/mingw-w64-x86_64-octave
+octave
+plot(linspace(1,10))
+exit
+</code></pre>
+<p>注：Windows 环境下 Octave 生成 SVG 图像存在问题。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="20-荣耀笔记本"><a class="header" href="#20-荣耀笔记本">20. 荣耀笔记本</a></h1>
+<p>本文主要讲述了作者在使用过多款笔记本后，选择荣耀笔记本的原因及各品牌笔记本的特点，同时提到了荣耀笔记本的一些优势和待改进之处。</p>
+<ul>
+<li><strong>📓 作者使用过的笔记本</strong>：包括小米笔记本 Air 13、ThinkPad S2 2018、ThinkPad E485 等。</li>
+<li><strong>🎧 ThinkPad S2 2018 的特点</strong>：具备充电阈值设置、杜比音效、反向充电等。</li>
+<li><strong>💻 选择荣耀笔记本的原因</strong>：有充电阈值设置、背光键盘、屏幕素质高、续航能力强等。</li>
+<li><strong>✨ 荣耀笔记本的优势</strong>：价格适中、配置丰富、支持 OS Turbo Boost 技术等。</li>
+<li><strong>🤔 各品牌笔记本的优缺点</strong>：小米性价比高但缺乏某些功能（充电阈值和反向充电），荣耀价格适中但无反向充电，ThinkPad 功能齐全但价格贵且不够轻薄。</li>
+<li><strong>📋 备注充电阈值和反向充电的作用</strong>：有利于电池寿命和方便出差充电。</li>
+</ul>
+<p>由于之前使用的笔记本已历经多年，价值有所折损，所以我考虑以旧换新，选择了荣耀笔记本，并复用搭配 ThinkPad 的紫米 65W 充电器。
+如果荣耀笔记本能像某些联想笔记本一样提供反向充电功能，那它就堪称完美了。
+后续使用荣耀笔记本一段时间，将更新其其它缺点。</p>
+<p>2023-05-09 更新：
+YOYO 助理目前还是个噱头，本地运行大模型，大模型智力、能力低下，且后台占用磁盘读写、约 1GB 内存，建议在“隐私”中关闭服务。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="21-wps-配置-mathtype"><a class="header" href="#21-wps-配置-mathtype">21. WPS 配置 MathType</a></h1>
+<h2 id="211-参考链接"><a class="header" href="#211-参考链接">21.1 参考链接</a></h2>
+<ol>
+<li><a href="https://zhuanlan.zhihu.com/p/492369639">WPS中配置MathType教程（简单详细，亲测可用）</a>；</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="22-摆脱过度自责拥抱成长"><a class="header" href="#22-摆脱过度自责拥抱成长">22. 摆脱过度自责，拥抱成长</a></h1>
+<p>在这篇文章中，我将分享我在面对错误和自我责备时的个人经历，以及我如何通过一系列策略来改善自己的情绪反应和行为模式。</p>
+<ul>
+<li><strong>🧐 接受不完美</strong>：我意识到每个人都会犯错，这是我们成长的一部分。错误是学习的机会，而不是我们价值的标签。</li>
+<li><strong>🔍 理性分析</strong>：当犯错时，我会尝试客观地分析原因，从中学习，并思考如何在未来避免同样的错误。</li>
+<li><strong>🛠️ 积极补救</strong>：我采取行动去补救错误，这不仅是成长的体现，也是负责任的表现。</li>
+<li><strong>🚧 设定边界</strong>：我学会了明确自己的责任范围，不承担不属于自己的过错，并学会适时地从负面情绪中抽离。</li>
+<li><strong>🕊️ 自我宽恕</strong>：我学会了对自己说：“我已经尽力了，现在是时候放下并向前看了。”自我宽恕是成长的重要部分。</li>
+<li><strong>🌟 培养正面思维</strong>：我尝试将注意力转移到我做对的事情上，积极的自我对话帮助我逐渐克服消极想法。</li>
+<li><strong>🗣️ 交流与支持</strong>：我与信任的朋友或家人分享感受，他们的视角有助于我更快地从自责中解脱出来。如果需要，我也会寻求专业帮助。</li>
+</ul>
+<p>通过这些策略，我学会了减少自责，并不是忽视错误或责任，而是以一种更健康、更有建设性的方式来应对挑战，促进个人的成长和发展。我将继续在这条道路上前进，不断进步。</p>
+<p>备注：</p>
+<ul>
+<li><strong>📝 错误与成长</strong>：错误是成长的一部分，不应成为自我价值的负担。</li>
+<li><strong>🛡️ 自我宽恕</strong>：放下错误，向前看，是自我提升的关键。</li>
+<li><strong>🌱 正面思维</strong>：积极的自我对话有助于培养正面思维，克服消极情绪。</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="23-文档校对"><a class="header" href="#23-文档校对">23. 文档校对</a></h1>
+<p>需要写一些大批量数字的文档，内容上可能存在疏忽，需要校对一下。目前初步使用：</p>
+<ul>
+<li>中文：<a href="https://www.ijiaodui.com/index.php?id=xiazai">爱校对</a>；</li>
+<li>英文：<a href="https://www.grammarly.com/">Grammarly</a>。</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="24-西格玛标准"><a class="header" href="#24-西格玛标准">24. 西格玛标准</a></h1>
+<p>在质量管理中，"西格玛"（Sigma，表示为σ）是一个统计学概念，用于衡量过程或产品的离散程度，即偏离理想状态或目标值的程度。3西格玛（3σ）和6西格玛（6σ）是两种不同的质量管理水平标准，它们反映了不同水平的缺陷率和过程能力。</p>
+<h2 id="241-3西格玛标准3σ"><a class="header" href="#241-3西格玛标准3σ">24.1 3西格玛标准（3σ）</a></h2>
+<ul>
+<li><strong>定义</strong>：在正态分布的情况下，3西格玛意味着大约99.73%的数据点将落在平均值（均值）的正负三个标准差之内。因此，缺陷率大约是0.27%，即每百万机会中有2700个缺陷。</li>
+<li><strong>应用</strong>：3西格玛标准在历史上曾是很多行业的普遍接受水平，意味着过程或产品有相对较高的缺陷率，但仍然是可接受的。</li>
+<li><strong>特点</strong>：相较于6西格玛，3西格玛对过程控制的要求较低，允许的变异较大，可能导致更高的成本和客户不满意的风险。</li>
+</ul>
+<h2 id="242-6西格玛标准6σ"><a class="header" href="#242-6西格玛标准6σ">24.2 6西格玛标准（6σ）</a></h2>
+<ul>
+<li><strong>定义</strong>：6西格玛意味着在正态分布中，几乎99.99966%的数据点位于平均值的正负六个标准差之内，对应的缺陷率仅为3.4ppm（每百万机会中有3.4个缺陷）。</li>
+<li><strong>目标</strong>：六西格玛管理体系旨在通过严格的统计方法和持续改进策略，将过程能力提升至这一高水平，以实现接近零缺陷的目标。</li>
+<li><strong>原则</strong>：包括DMAIC（定义、测量、分析、改进、控制）和DMADV（定义、测量、分析、设计、验证）等流程改进方法，强调数据驱动的决策，关注顾客需求，并通过持续改进和减少变异来优化流程。</li>
+<li><strong>应用</strong>：广泛应用于制造业、服务业等多个行业，不仅限于生产过程，也包括管理、客户服务等所有关键业务流程。</li>
+</ul>
+<p>总结来说，3西格玛是一个较早的质量标准，允许一定比例的缺陷存在，而6西格玛则代表了更高质量水平的追求，几乎消除缺陷，通过系统化的管理和改进工具来实现卓越运营。</p>
+<h2 id="243-参考链接"><a class="header" href="#243-参考链接">24.3 参考链接</a></h2>
+<ul>
+<li><a href="https://baike.baidu.com/item/%E5%85%AD%E8%A5%BF%E6%A0%BC%E7%8E%9B%E5%8E%9F%E5%88%99">六西格玛原则</a>。</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="25-字体推荐"><a class="header" href="#25-字体推荐">25. 字体推荐</a></h1>
+<ul>
+<li>文档：宋体、Times New Roman、Palatino Linotype；</li>
+<li>公式：Times New Roman、Palatino Linotype；</li>
+<li>编程：<a href="https://www.intel.com/content/www/us/en/company-overview/one-monospace-font.html">Intel One Mono</a>、<a href="https://github.com/subframe7536/maple-font">Maple Mono NF CN</a>；</li>
+<li>阅读：<a href="https://developer.huawei.com/consumer/cn/design/resource/">HarmonyOS Sans SC</a>；</li>
+<li>图片：宋体、Palatino Linotype。</li>
+</ul>
+<p>备注：此处引用 HarmonyOS 的字体资源，透露出我对华为顶层设计的赞赏。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="26-vs-code-配置-meson"><a class="header" href="#26-vs-code-配置-meson">26. VS Code 配置 Meson</a></h1>
+<p>Windows 下通过 MSYS2 安装 <a href="https://mesonbuild.com/">Meson</a>，VS Code 配置 Meson 涉及到：</p>
+<ul>
+<li><a href="https://github.com/JCWasmx86/mesonlsp"><code>mesonlsp</code></a>: Meson 的 LSP 服务器，用于提供语法高亮、自动补全等；</li>
+<li><a href="https://github.com/annacrombie/muon"><code>muon</code></a>: Meson 的 C99 实现，用于格式化代码（支持 Meson 语法或不及时）。</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="27-fortran-编程"><a class="header" href="#27-fortran-编程">27. Fortran 编程</a></h1>
+<p><a href="https://fortran-lang.org/zh_CN/learn/quickstart/">Fortran</a> 是一种适应数学表达、高性能科学计算的成熟、免费语言，这是它的特色。</p>
+<p>随着 <a href="https://fortran-lang.discourse.group/t/fortran-returns-to-top-20-tiobe-index/1069/203?u=zoziha">Fortran-lang 社区的努力</a>，Fortran 迎来复苏迹象，作者看好这种发展，虽然 Fortran 也存在一些问题：</p>
+<ol>
+<li><a href="https://github.com/fortran-lang">开源社区</a>生态小，开发者少；</li>
+<li>语法糖少，语言标准迭代缓慢且不一定具有流行性。</li>
+</ol>
+<p>我常使用以下工具链软件：</p>
+<ol>
+<li><a href="https://gcc.gnu.org/fortran/">GNU Fortran</a>；</li>
+<li><a href="https://www.gnu.org/software/gdb/">GDB</a>；</li>
+<li><a href="https://code.visualstudio.com/">VS Code</a>；</li>
+<li><a href="https://mesonbuild.com/">Meson</a>；</li>
+<li><a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>；</li>
+<li><a href="https://git-scm.com/">Git</a>；</li>
+<li><a href="https://software.intel.com/content/www/us/en/develop/tools/vtune-profiler.html">Intel VTune Profiler</a>。</li>
+</ol>
+<pre><code class="language-fortran">program main
+    print *, "Hello, world!"
+end program main
+</code></pre>
+<p>备注：<a href="https://github.com/fortran-lang">华为是为数不多的涉及高性能编译器的国内公司之一</a>。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="28-幸存者偏差"><a class="header" href="#28-幸存者偏差">28. 幸存者偏差</a></h1>
+<p>幸存者偏差 (survivorship Bias) 是一种认知偏差，指的是在分析数据或做出决定时，人们倾向于专注于那些"幸存"下来的信息或案例，而忽略了未能幸存或未被观察到的数据，从而导致结论出现偏差。这种偏差常发生在统计分析、金融投资、历史研究、产品评价等多个领域。例如，在投资领域，人们可能只关注并学习成功企业的策略，却忽略了同样采取类似策略但失败了的企业，因为失败的企业往往没有成为焦点或不再存在，从而导致对成功因素的理解不全面。</p>
+<p>再比如，军事上分析飞机受损情况来加强防护时，如果仅基于返航的飞机受损位置进行加固，就忽略了那些被击中关键部位未能返航的飞机，实际上应该加强对未受损部位的保护，因为那些部位被击中的飞机没能回来。</p>
+<p>总之，幸存者偏差提醒我们在分析问题时要考虑全貌，包括那些不可见或未被记录的数据占以避免得出有偏差的结论。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="29-低垂的果实"><a class="header" href="#29-低垂的果实">29. 低垂的果实</a></h1>
+<p>"低垂的果实"是一个比喻，来源于现实生活中的果实成熟后会垂下枝头，容易被采摘。在比喻意义上，它用来形容那些容易获得的机会、成果或优势，通常指不需要太多努力就能达成的目标或解决问题的方法。这个表达常用于商业、教育、个人发展等领域，鼓励人们先抓住眼前易得的机会，再寻求更难达到的目标。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="30-powershell-传递命令行参数"><a class="header" href="#30-powershell-传递命令行参数">30. PowerShell 传递命令行参数</a></h1>
+<p>当运行需要向运行环境传递自定义参数时，PowerShell 的命令行参数传递十分有用。示例：</p>
+<pre><code class="language-powershell"># 先决条件 `meson compile -C build` 生成可执行文件 FNL.exe
+# 用法: `.\run_example.ps1 -NT 3` 设置线程数为 3
+param(
+    [Parameter()]
+    [Int16]$NT = 3
+)
+
+write-host "Setting OMP_NUM_THREADS = $NT"
+Write-Host "Running example A14W040 for FNL.exe"
+$env:OMP_NUM_THREADS = $NT
+.\build\FNL.exe -C .\example\A14W040
+</code></pre>
+<h2 id="301-参考链接"><a class="header" href="#301-参考链接">30.1 参考链接</a></h2>
+<ol>
+<li><a href="https://www.delftstack.com/zh/howto/powershell/command-line-arguments-in-powershell/">在 Windows PowerShell 中获取命令行参数</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="31-物料"><a class="header" href="#31-物料">31. 物料</a></h1>
+<pre><code class="language-text">in -&gt; [ function ] -&gt; out
+in -&gt; [ platform ] -&gt; out
+...
+!? -&gt; [ !? ] -&gt; !?
+</code></pre>
+<h2 id="311-参考链接"><a class="header" href="#311-参考链接">31.1 参考链接</a></h2>
+<ol>
+<li><a href="https://github.com/ruanyf/weekly/blob/master/docs/issue-299.md">AI 的关键是语料</a></li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="32-科研通用技术"><a class="header" href="#32-科研通用技术">32. 科研通用技术</a></h1>
+<p>做科研是一项复杂而系统的工作，涉及多种通用技术。以下是一些科研工作中可能需要掌握的关键技术：</p>
+<ol>
+<li>
+<p><strong>文献检索与管理</strong>：学会使用各种数据库和搜索引擎来检索相关文献，以及使用文献管理软件如EndNote、Zotero等来组织和管理文献。</p>
+</li>
+<li>
+<p><strong>统计分析</strong>：掌握统计学的基本原理和方法，能够使用统计软件如SPSS、R、Stata等进行数据分析。</p>
+</li>
+<li>
+<p><strong>实验技术</strong>：根据研究领域不同，可能需要掌握不同的实验技术，如生物学实验、化学实验、物理实验等。</p>
+</li>
+<li>
+<p><strong>编程与数据分析</strong>：掌握至少一种编程语言，如Python、Java或C++，以及数据分析技能，这对于处理大量数据和开发算法非常重要。</p>
+</li>
+<li>
+<p><strong>科研写作</strong>：能够撰写科研论文、项目申请书和报告，清晰地表达研究思路和结果。</p>
+</li>
+<li>
+<p><strong>项目管理</strong>：了解如何规划和执行科研项目，包括时间管理、预算控制和团队协作。</p>
+</li>
+<li>
+<p><strong>批判性思维</strong>：能够批判性地分析问题，提出假设，并设计实验来验证这些假设。</p>
+</li>
+<li>
+<p><strong>学术交流</strong>：能够通过学术会议、研讨会和工作坊等方式与同行交流，分享研究成果。</p>
+</li>
+<li>
+<p><strong>伦理和合规性</strong>：了解并遵守科研伦理和相关法规，确保研究的合法性和道德性。</p>
+</li>
+<li>
+<p><strong>团队合作</strong>：科研工作通常需要团队合作，因此具备良好的沟通和协作能力是非常重要的。</p>
+</li>
+<li>
+<p><strong>创新思维</strong>：科研需要创新，因此培养创新思维，能够提出新的想法和解决方案是必要的。</p>
+</li>
+<li>
+<p><strong>持续学习</strong>：科研领域不断进步，因此持续学习和更新知识是科研人员必须具备的能力。</p>
+</li>
+<li>
+<p><strong>技术报告撰写</strong>：能够撰写技术报告，详细记录实验过程、结果和分析。</p>
+</li>
+<li>
+<p><strong>专利和知识产权</strong>：了解如何申请和保护研究成果的知识产权。</p>
+</li>
+<li>
+<p><strong>风险评估与管理</strong>：能够评估科研项目中可能遇到的风险，并制定相应的管理策略。</p>
+</li>
+</ol>
+<p>这些技术并不是一成不变的，随着科研领域的发展，新的技术和方法会不断出现。科研人员需要不断学习和适应，以保持其研究的前沿性。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="33-emt-网格优化技术"><a class="header" href="#33-emt-网格优化技术">33. EMT 网格优化技术</a></h1>
+<p>EMT网格优化技术，即弹性网格技术(Elastic Mesh Technology)，是一种用于处理计算过程中的网格畸变问题的技术。在进行数值模拟，特别是在流体动力学或结构力学分析中，网格的畸变可能会导致计算不稳定甚至终止。为了避免这种情况，EMT通过假定网格段具有弹性，允许网格在受到载荷或边界条件变化时发生形变，从而保持计算的连续性和稳定性。</p>
+<p>EMT技术通常结合边界积分法使用，可以有效地模拟三维气泡动力学等问题。通过这种技术，可以对网格进行调整，使其在计算过程中保持较好的形状和质量，从而提高计算的准确性和效率[<a href="https://pubs.cstam.org.cn/data/article/bzycj/preview/pdf/1001-1455(2008)02-0124-07.pdf">1</a>]。</p>
+<p>此外，EMT技术还可以与其他网格生成和优化技术结合使用，如自适应网格技术，进一步提升计算精度和效率。自适应网格技术可以根据计算区域的应力、速度等变量变化梯度自动调整网格密度，使得网格在关键区域更加精细，而在变化较小的区域则相对粗糙，从而提高计算效率并减少计算成本[<a href="https://www.researchgate.net/publication/368874312_jiyuzishiyingwanggedejiegoutapuyouhuaStructural_topology_optimization_based_on_adaptive_mesh">2</a>]。</p>
+<p>需要注意的是，EMT网格优化技术的具体实现和应用可能会根据不同的计算需求和软件平台有所差异，但其核心思想是通过网格的弹性调整来适应计算过程中的变化，保证计算的稳定性和可靠性。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="34-个人与团体"><a class="header" href="#34-个人与团体">34. 个人与团体</a></h1>
+<p>立身自己的需求，作为源动力，利用团体力量，发挥团体思维。
+生于原野，与原野共舞，立足根本，当一名无名客。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="35-5-分钟教你在-windows-上运行-fortran"><a class="header" href="#35-5-分钟教你在-windows-上运行-fortran">35. 5 分钟教你在 Windows 上运行 Fortran</a></h1>
+<blockquote>
+<p>📌5 分钟教你在 Windows 上运行 Fortran 。</p>
+</blockquote>
+<blockquote>
+<p>zoziha，e-mail: <a href="mailto:zuo.zhihua@qq.com" title="zuo.zhihua@qq.com">zuo.zhihua@qq.com</a>，青岛黄岛，中铁世博城，2022-11-24。</p>
+</blockquote>
+<h2 id="环境搭建"><a class="header" href="#环境搭建">⚙️环境搭建</a></h2>
+<p>从以下链接下载并安装 <a href="https://mirrors.tuna.tsinghua.edu.cn/msys2/distrib/x86_64/" title="msys2">msys2</a>：</p>
+<pre><code class="language-sh">https://mirrors.tuna.tsinghua.edu.cn/msys2/distrib/x86_64/    # 清华源
+https://www.msys2.org/                                        # msys2 官网
+</code></pre>
+<p>同时按下 <code>Win+x+Shift+i</code> 键，打开 <code>powershell</code> ，输入以下命令，临时使用环境变量和安装 <a href="https://gcc.gnu.org/" title="编译器">编译器</a> <a href="https://gcc.gnu.org/" title="gfortran">gfortran</a> 和 <a href="https://fpm.fortran-lang.org/zh_CN/index.html" title="包管理器">包管理器</a> <a href="https://fpm.fortran-lang.org/zh_CN/index.html" title="fpm">fpm</a>：</p>
+<pre><code class="language-powershell">$env:path+=";C:\msys64\ucrt64\bin\;C:\msys64\usr\bin\"                  # 添加环境变量
+pacman -S mingw-w64-ucrt-x86_64-gcc-fortran mingw-w64-ucrt-x86_64-fpm   # 安装编译器
+</code></pre>
+<p>输入 <code>Y</code> 回车确定，此时你已渐入佳境。</p>
+<h2 id="构建代码"><a class="header" href="#构建代码">⚔️构建代码</a></h2>
+<p>输入以下命令，新建 <a href="https://fortran-lang.org/zh_CN/index" title="Fortran">Fortran</a> 项目：</p>
+<pre><code class="language-sh">fpm new --app demo; cd demo               # 新建项目并切换路径
+</code></pre>
+<p>输入以下命令，打开记事本查看代码：</p>
+<pre><code class="language-sh">notepad app/main.f90                      # 使用记事本打开文件
+</code></pre>
+<pre><code class="language-fortran">program main
+  implicit none
+
+  print *, "hello from project demo"         ! 打印语句
+end program main
+</code></pre>
+<p>这是一个 <code>Fortran</code> 的主程序，关闭记事本，此时你已逐渐超神。</p>
+<h2 id="运行程序"><a class="header" href="#运行程序">🚀运行程序</a></h2>
+<p>输入以下命令，编译运行程序：</p>
+<pre><code class="language-sh">fpm run                                   # 运行项目
+</code></pre>
+<pre><code class="language-sh"> + mkdir build\dependencies
+main.f90                               done.
+demo.exe                               done.
+[100%] Project compiled successfully.
+ hello from project demo                    # 正确打印语句
+</code></pre>
+<p>好了，5 分钟，你已经超越了 50% 的 <code>Fortran</code> 用户了。学一下<a href="https://fortran-lang.org/zh_CN/learn/quickstart/variables/" title="变量声明"><strong>变量声明</strong></a><strong>、</strong><a href="https://fortran-lang.org/zh_CN/learn/quickstart/organising_code/" title="函数调用"><strong>函数调用</strong></a><strong>、</strong><a href="https://fortran-lang.org/zh_CN/learn/quickstart/operators_control_flow/" title="if"><strong>if</strong></a><a href="https://fortran-lang.org/zh_CN/learn/quickstart/operators_control_flow/" title="判断和"><strong>判断和</strong></a><a href="https://fortran-lang.org/zh_CN/learn/quickstart/operators_control_flow/" title="do"><strong>do</strong></a><a href="https://fortran-lang.org/zh_CN/learn/quickstart/operators_control_flow/" title="循环"><strong>循环</strong></a><strong>、</strong><a href="https://fortran-lang.org/zh_CN/learn/quickstart/arrays_strings/" title="数组及并行"><strong>数组及并行</strong></a><strong>、文件读写</strong>，你会变得多强，我连想都不敢想😵！</p>
+<blockquote>
+<p>备注：想要了解添加系统环境变量，去问一下必应或者 <a href="https://kimi.moonshot.cn/">Kimi AI</a> 。</p>
+</blockquote>
+<h2 id="视频链接"><a class="header" href="#视频链接">📺视频链接</a></h2>
+<p><a href="https://www.bilibili.com/video/BV1jg411i7iU/?vd_source=a399c2829da634847ecb0bca1d558517">https://www.bilibili.com/video/BV1jg411i7iU/?vd_source=a399c2829da634847ecb0bca1d558517</a></p>
+<h2 id="远程协助"><a class="header" href="#远程协助">⏳远程协助</a></h2>
+<ul>
+<li>作者提供远程协助服务与 3 个月售后，价格：15元/次。</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="36-anytype-笔记"><a class="header" href="#36-anytype-笔记">36. AnyType 笔记</a></h1>
+<p>曾经我使用商业笔记软件如有道云笔记、OneNote、印象笔记、Notion、wolai、Flowus，有些笔记软件会员需求较高、网速不佳、不够简洁，最后我全心使用离线优先的 AnyType。AnyType 的优势：</p>
+<ol>
+<li>离线优先，不惧网速及断网；</li>
+<li>轻量级，无广告，无干扰；</li>
+<li>尊重隐私，去中心化。</li>
+</ol>
+<h2 id="361-参考链接"><a class="header" href="#361-参考链接">36.1 参考链接</a></h2>
+<ol>
+<li><a href="https://anytype.io/">AnyType</a>；</li>
+<li><a href="https://doc.anytype.io/anytype-docs/v/documentation_cn/jian-jie/readme/onboarding">AnyType 官方文档</a>。</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="37-windows-资源管理与-rust-高效应用集"><a class="header" href="#37-windows-资源管理与-rust-高效应用集">37. Windows 资源管理与 Rust 高效应用集</a></h1>
+<p>Windows 默认的资源管理器比较卡顿臃肿，使用 Rust 编写的 <a href="https://clementtsang.github.io/bottom/0.9.6/">Bottom</a> 轻量高效。通过 MSYS2 中 <code>pacman -S ucrt64/mingw-w64-ucrt-x86_64-bottom</code>
+可以安装 Bottom，并在终端中使用 <code>btm -b</code> 命令，非常适合软件开发者。</p>
+<p>基于 Rust 编写的其它高效应用有：</p>
+<ol>
+<li><a href="https://github.com/rust-lang/mdBook">mdBook</a>；</li>
+<li><a href="https://github.com/starship/starship">starship</a>；</li>
+<li><a href="https://github.com/sharkdp/bat">bat</a>；</li>
+<li><a href="https://github.com/bootandy/dust">dust</a>；</li>
+<li><a href="https://github.com/sharkdp/fd">fd</a>；</li>
+<li><a href="https://github.com/sharkdp/hyperfine">hyperfine</a>。</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="38-ai-应用推荐"><a class="header" href="#38-ai-应用推荐">38. AI 应用推荐</a></h1>
+<p>2025-05-17：</p>
+<ol>
+<li><a href="https://www.doubao.com/chat">豆包</a>、豆包Edge插件；</li>
+<li><a href="https://kimi.moonshot.cn/chat">KIMI</a>；</li>
+<li><a href="https://tongyi.aliyun.com/qianwen/">通义</a>、通义灵码；</li>
+<li><a href="https://metaso.cn/">秘塔AI</a>；</li>
+<li><a href="https://www.aminer.cn/">Aminer</a>。</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="39-船舶专业常用的图像类型"><a class="header" href="#39-船舶专业常用的图像类型">39. 船舶专业常用的图像类型</a></h1>
+<p>对于船舶工程专业的学生，在使用 Matplotlib 时可能会经常用到以下几种图像类型：</p>
+<ol>
+<li><strong>线图（plot）</strong>：用于展示随时间或其他变量变化的数据趋势。线图可以帮助学生分析船舶的速度、位移、加速度等参数的变化情况。</li>
+<li><strong>散点图（scatter）</strong>：适用于展示两个变量之间的关系。在船舶工程中，散点图可以用于分析船舶的性能与某些参数之间的关系，例如船舶的速度与燃油消耗之间的关系。</li>
+<li><strong>柱状图（bar）</strong>：用于比较不同类别之间的数据差异。在船舶工程中，柱状图可以用于比较不同船舶型号的性能差异，或者比较不同设计方案的优缺点。</li>
+<li><strong>箱线图（boxplot）</strong>：用于展示数据的分布情况。箱线图可以帮助学生了解船舶性能参数的分布范围，以及识别可能存在的异常值。</li>
+<li><strong>提琴图（violinplot）</strong>：结合了箱线图和核密度估计的特点，适用于展示数据的分布和密度情况。在船舶工程中，提琴图可以用于分析船舶性能参数的分布情况，以及比较不同设计方案的性能差异。</li>
+<li><strong>饼图（pie）</strong>：用于展示不同类别之间的数据比例关系。在船舶工程中，饼图可以用于分析船舶的成本构成，或者展示不同任务在船舶运营中的时间分配。</li>
+<li><strong>等值线图（contour）</strong>：用于展示三维空间中的数据分布。在船舶工程中，等值线图可以用于分析船舶周围的流场分布，或者展示船舶在不同海况下的受力情况。</li>
+<li><strong>向量场图（quiver）</strong>：用于展示向量数据。在船舶工程中，向量场图可以用于展示船舶周围的流场情况，或者展示船舶的受力情况。</li>
+<li><strong>流线图（streamplot）</strong>：用于展示流场的流线分布。在船舶工程中，流线图可以用于分析船舶周围的流场情况，以及优化船舶的设计。</li>
+<li><strong>三维图（plot_surface）</strong>：用于展示三维空间中的数据分布。在船舶工程中，三维图可以用于展示船舶的结构，或者分析船舶在不同海况下的受力情况。</li>
+</ol>
+<p>这些图像类型都有其独特的应用场景和特点，学生可以根据具体的需求选择合适的图像类型来展示和分析数据。同时，Matplotlib 还提供了丰富的定制选项，可以帮助学生更好地定制图像的外观和显示效果。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
