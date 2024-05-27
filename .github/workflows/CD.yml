@@ -1,9 +1,9 @@
 name: hugo & netlify
 on:
   push:
-    paths:
-      - "content/posts/**.md"
-      - "hugo.toml"
+    # paths:
+    #   - "content/posts/**.md"
+    #   - "hugo.toml"
 
   pull_request:
     branches:
@@ -19,8 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-            submodules: true  # Fetch Hugo themes (true OR recursive)
-            fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
