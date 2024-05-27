@@ -2,6 +2,8 @@
 title = 'ch35-5 分钟教你在 Windows 上运行 Fortran'
 date = 2024-05-26T23:35:19+08:00
 draft = false
+tags = ["Windows", "教程", "Fortran"]
+categories = ["学习"]
 +++
 
 > 📌5 分钟教你在 Windows 上运行 Fortran 。
@@ -72,7 +74,7 @@ demo.exe                               done.
 
 ## 📺视频链接
 
-<https://www.bilibili.com/video/BV1jg411i7iU/?vd_source=a399c2829da634847ecb0bca1d558517>
+{{< bilibili id="BV1jg411i7iU" >}}
 
 ## ⏳远程协助
 
