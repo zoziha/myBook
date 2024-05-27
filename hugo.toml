@@ -50,7 +50,7 @@ hasCJKLanguage = true
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = "记录美好生活。"
   # website images for Open Graph and Twitter Cards
-  images = ["https://foruda.gitee.com/avatar/1677049043097341143/5373200_zoziha_1651324229.png"]
+  images = ["/images/zoziha.png"]
 
   # Header config
   [params.header]
@@ -152,9 +152,9 @@ hasCJKLanguage = true
     [params.home.profile]
       enable = true
       # Gravatar Email for preferred avatar in home page
-      gravatarEmail = "zuo.zhihua@qq.com"
+      # gravatarEmail = "zuo.zhihua@qq.com"
       # URL of avatar shown in home page
-      avatarURL = "https://avatars.githubusercontent.com/u/32035096?v=4"
+      avatarURL = "/images/zoziha.png"
       #  title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page (HTML format is supported)
