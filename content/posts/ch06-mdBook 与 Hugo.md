@@ -11,7 +11,7 @@ categories = ["娱乐"]
 
 [1]: https://github.com/rust-lang/mdBook
 [2]: https://markdown.com.cn/
-[3]: https://gohugo.io/
+[3]: https://www.gohugo.org/doc/
 [4]: https://hugoloveit.com/zh-cn/
 
 ```sh
