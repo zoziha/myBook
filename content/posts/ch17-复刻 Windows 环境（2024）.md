@@ -386,6 +386,10 @@ height="34px" align=left>50.7 MB</td> <td class="normalborder"  height="34px" al
 </p></body></html>
 </div>
 
+经验：
+
+1. 建议在 Everything 中设置索引数据库存储路径，以避免频繁启动时重新检索磁盘。
+
 ## 17.2 Microsoft Store Apps
 
 <div class="my-custom-class">
