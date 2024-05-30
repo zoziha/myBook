@@ -36,3 +36,9 @@ end program main
 备注：[华为是为数不多的涉及高性能编译器的国内公司之一][3]。
 
 [3]: https://support.huawei.com/enterprise/zh/doc/EDOC1100283328/8de2b49a
+
+## 27.1 fpm 与 meson
+
+fpm 目前还不够成熟，主要表现在对外部链接的支持上，meson 则相对更成熟。
+
+这是我写的[《Fortran中文手册》](https://gitee.com/ship-motions/ModernFortranInAction)。

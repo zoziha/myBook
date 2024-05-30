@@ -7,7 +7,6 @@ categories = ["学习"]
 +++
 
 > 📌5 分钟教你在 Windows 上运行 Fortran 。
-
 > zoziha，e-mail: [zuo.zhihua@qq.com](mailto:zuo.zhihua@qq.com "zuo.zhihua@qq.com")，青岛黄岛，中铁世博城，2022-11-24。
 
 ## ⚙️环境搭建
