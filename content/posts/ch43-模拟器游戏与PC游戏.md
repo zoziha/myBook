@@ -30,7 +30,7 @@ GBA 游戏下载：[老男人游戏网](https://www.oldmantvg.net/)。
 
 Ryujinx 运行《塞尔达-王国之泪》会发生闪退，稳定性不如 [Yuzu](https://www.iplaysoft.com/yuzu.html)，可惜的是 Yuzu 已经停更了，潜在继承者有：[suyu](https://git.suyu.dev/suyu/suyu)、[torzu](https://github.com/litucks/torzu)。
 
-推荐的游戏有：塞尔达-王国之泪、塞尔达-旷野之息、煤炭镇的小白（老婆喜欢看蜡笔小新，爱玩这个游戏）。
+推荐的游戏有：塞尔达-王国之泪、塞尔达-旷野之息、煤炭镇的小白（老婆喜欢看蜡笔小新，爱玩这个游戏）、双人成行。
 
 * [Yuzu贴吧](https://tieba.baidu.com/f?kw=yuzu%E6%A8%A1%E6%8B%9F%E5%99%A8&ie=utf-8)。
 * 我的荣耀 X14 Plus 笔记本电脑 CPU (AMD 8845HS) 配备的 780M 核显高于 Yuzu 推荐核显配置 680M。
