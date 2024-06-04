@@ -1,8 +1,9 @@
 +++
 title = 'Ch06-mdBook 与 Hugo'
 date = 2024-05-26T23:35:19+08:00
+lastmod = 2024-06-04T18:37:52+08:00
 draft = false
-tags = ["Windows"]
+tags = ["Windows", "Hugo"]
 categories = ["娱乐"]
 +++
 

@@ -1,6 +1,7 @@
 +++
 title = 'Ch43-模拟器游戏与PC游戏'
 date = 2024-06-02T18:37:52+08:00
+lastmod = 2024-06-04T18:37:52+08:00
 draft = false
 tags = ["Windows", "游戏", "Switch"]
 categories = ["娱乐"]
@@ -27,11 +28,12 @@ GBA 游戏下载：[老男人游戏网](https://www.oldmantvg.net/)。
 * [阿里云盘-游戏包1](https://www.aliyundrive.com/s/sKeAtoeRzz2)；
 * [阿里云盘-游戏包2](https://tieba.baidu.com/p/7929635907)。
 
-Ryujinx 运行《塞尔达-王国之泪》会发生闪退，稳定性不如 [Yuzu](https://www.iplaysoft.com/yuzu.html)，可惜的是 Yuzu 已经停更了。
+Ryujinx 运行《塞尔达-王国之泪》会发生闪退，稳定性不如 [Yuzu](https://www.iplaysoft.com/yuzu.html)，可惜的是 Yuzu 已经停更了，潜在继承者有：[suyu](https://git.suyu.dev/suyu/suyu)、[torzu](https://github.com/litucks/torzu)。
 
-推荐的游戏有：塞尔达-王国之泪、塞尔达-旷野之息。
+推荐的游戏有：塞尔达-王国之泪、塞尔达-旷野之息、煤炭镇的小白（老婆喜欢看蜡笔小新，爱玩这个游戏）。
 
 * [Yuzu贴吧](https://tieba.baidu.com/f?kw=yuzu%E6%A8%A1%E6%8B%9F%E5%99%A8&ie=utf-8)。
+* 我的荣耀 X14 Plus 笔记本电脑 CPU (AMD 8845HS) 配备的 780M 核显高于 Yuzu 推荐核显配置 680M。
 
 ## 43.2 PC 游戏
 

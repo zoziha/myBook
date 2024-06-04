@@ -1,6 +1,7 @@
 +++
 title = 'Ch27-Fortran 编程'
 date = 2024-05-26T23:35:19+08:00
+lastmod = 2024-06-04T18:37:52+08:00
 draft = false
 tags = ["Fortran"]
 categories = ["学习"]
@@ -42,3 +43,9 @@ end program main
 fpm 目前还不够成熟，主要表现在对外部链接的支持上，meson 则相对更成熟。
 
 这是我写的[《Fortran中文手册》](https://gitee.com/ship-motions/ModernFortranInAction)。
+
+## 包复用的基础
+
+1. 容易获取，如采用通用获取手段；
+2. 社区官方持续支持；
+3. 接口简单、文档健全。
