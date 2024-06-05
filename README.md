@@ -9,3 +9,6 @@
 hugo server -D
 hugo new posts/my-first-post.md
 ```
+
+> [!IMPORTANT]
+> 这是一个个人博客笔记，请勿使用。
