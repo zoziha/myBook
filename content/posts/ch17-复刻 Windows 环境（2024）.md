@@ -13,6 +13,11 @@ draft = false
 5. Geek Uninstaller、AutoClock、Traffic Monitor、迅雷 11、B0pass、LS-DYNA、Fliqlo.scr等。
 6. [停止 Windows 更新][1]。
 
+```cmd
+@echo off
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v "FlightSettingsMaxPauseDays" /t REG_DWORD /d 65535
+```
+
 [1]: https://zhuanlan.zhihu.com/p/633610238
 
 <div align="center">
