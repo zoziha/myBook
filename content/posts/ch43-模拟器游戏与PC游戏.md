@@ -23,14 +23,19 @@ GBA 游戏下载：[老男人游戏网](https://www.oldmantvg.net/)。
 
 [Ryujinx](https://www.iplaysoft.com/ryujinx.html) 是一个开源的 Switch 模拟器，可以模拟 Switch 游戏，适合笔记本电脑设备。
 相关链接：
+
 * [Switch模拟器Ryujinx联网版官方中文入门教程（含最新KEY和固件）](https://www.bilibili.com/read/cv20541633/)；
-* [夸克网盘-游戏包](https://pan.quark.cn/s/5526bf5404c6#/list/share)；
+* [夸克网盘-游戏包1](https://pan.quark.cn/s/5526bf5404c6)；
+* [夸克网盘-游戏包2](https://pan.quark.cn/s/19619e73b43f)；
 * [阿里云盘-游戏包1](https://www.aliyundrive.com/s/sKeAtoeRzz2)；
 * [阿里云盘-游戏包2](https://tieba.baidu.com/p/7929635907)。
 
 Ryujinx 运行《塞尔达-王国之泪》会发生闪退，稳定性不如 [Yuzu](https://www.iplaysoft.com/yuzu.html)，可惜的是 Yuzu 已经停更了，潜在继承者有：[suyu](https://git.suyu.dev/suyu/suyu)、[torzu](https://github.com/litucks/torzu)。
 
 推荐的游戏有：塞尔达-王国之泪、塞尔达-旷野之息、煤炭镇的小白（老婆喜欢看蜡笔小新，爱玩这个游戏）、双人成行。
+
+{{< figure src="/images/蜡笔小新1.png" title="蜡笔小新1" >}}
+{{< figure src="/images/蜡笔小新2.png" title="蜡笔小新2" >}}
 
 * [Yuzu贴吧](https://tieba.baidu.com/f?kw=yuzu%E6%A8%A1%E6%8B%9F%E5%99%A8&ie=utf-8)。
 * 我的荣耀 X14 Plus 笔记本电脑 CPU (AMD 8845HS) 配备的 780M 核显高于 Yuzu 推荐核显配置 680M。
