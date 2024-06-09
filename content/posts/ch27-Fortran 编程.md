@@ -44,7 +44,22 @@ fpm 目前还不够成熟，主要表现在对外部链接的支持上，meson �
 
 这是我写的[《Fortran中文手册》](https://gitee.com/ship-motions/ModernFortranInAction)。
 
-## 包复用的基础
+### 27.1.1 fpm-更适合小型代码
+
+```sh
+fpm new my_project
+fpm run
+```
+
+### 27.1.2 meson-更适合大型代码
+
+```sh
+meson setup build
+meson compile -C build
+meson devenv -C build
+```
+
+## 27.2 包复用的基础
 
 1. 容易获取，如采用通用获取手段；
 2. 社区官方持续支持；

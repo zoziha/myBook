@@ -1,7 +1,10 @@
 +++
 title = 'Ch17-复刻 Windows 环境（2024）'
 date = 2024-05-26T23:35:19+08:00
+lastmod = 2024-06-04T18:37:52+08:00
 draft = false
+tags = ["Windows", "记录"]
+categories = ["娱乐"]
 +++
 
 2024 年换机，记录当前顺手的 Windows 环境。
@@ -10,10 +13,20 @@ draft = false
 2. Microsoft Store Apps；
 3. MSYS2 Pkgs；
 4. Powershell 配置；
-5. Geek Uninstaller、AutoClock、Traffic Monitor、迅雷 11、B0pass、LS-DYNA、Fliqlo.scr等。
+5. Geek Uninstaller、AutoClock（shell:startup）、Traffic Monitor（[VC++运行时](https://docs.microsoft.com/zh-CN/cpp/windows/latest-supported-vc-redist?view=msvc-170)）、迅雷 11、B0pass、LS-DYNA、Fliqlo.scr等。
 6. [停止 Windows 更新][1]。
 
+```cmd
+@echo off  :: 阻止Windows更新
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v "FlightSettingsMaxPauseDays" /t REG_DWORD /d 65535
+```
+
 [1]: https://zhuanlan.zhihu.com/p/633610238
+
+**跳过TPM验证安装Win11教程：**
+
+Win10/Win11升级至Win11，可跳过TPM验证，采用脚本 [MediaCreationTool.bat](https://github.com/AveYo/MediaCreationTool.bat)。然后装载下载的镜像，使用镜像中的
+setup.exe更新同样许可证版本的Windows11，可以保持个人数据与应用。
 
 <div align="center">
 <img src="https://img2.imgtp.com/2024/04/29/jOanXDsL.png" alt="1714382044505.png" title="1714382044505.png" width="640"></div>
