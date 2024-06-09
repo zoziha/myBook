@@ -28,7 +28,8 @@ GBA 游戏下载：[老男人游戏网](https://www.oldmantvg.net/)。
 * [夸克网盘-游戏包1](https://pan.quark.cn/s/5526bf5404c6)；
 * [夸克网盘-游戏包2](https://pan.quark.cn/s/19619e73b43f)；
 * [阿里云盘-游戏包1](https://www.aliyundrive.com/s/sKeAtoeRzz2)；
-* [阿里云盘-游戏包2](https://tieba.baidu.com/p/7929635907)。
+* [阿里云盘-游戏包2](https://tieba.baidu.com/p/7929635907)；
+* [上游世界](https://www.vgter.net/)。
 
 Ryujinx 运行《塞尔达-王国之泪》会发生闪退，稳定性不如 [Yuzu](https://www.iplaysoft.com/yuzu.html)，可惜的是 Yuzu 已经停更了，潜在继承者有：[suyu](https://git.suyu.dev/suyu/suyu)、[torzu](https://github.com/litucks/torzu)。
 
@@ -45,7 +46,7 @@ Ryujinx 运行《塞尔达-王国之泪》会发生闪退，稳定性不如 [Yuz
 * [Yuzu贴吧](https://tieba.baidu.com/f?kw=yuzu%E6%A8%A1%E6%8B%9F%E5%99%A8&ie=utf-8)。
 * 我的荣耀 X14 Plus 笔记本电脑 CPU (AMD 8845HS) 配备的 780M 核显高于 Yuzu 推荐核显配置 680M。
 
-## 43.2 PC 游戏
+## 43.4 PC 游戏
 
 笔记本性能孱弱，购买了 START 云游戏，玩了以下游戏：
 
