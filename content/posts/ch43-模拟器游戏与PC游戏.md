@@ -32,7 +32,12 @@ GBA 游戏下载：[老男人游戏网](https://www.oldmantvg.net/)。
 
 Ryujinx 运行《塞尔达-王国之泪》会发生闪退，稳定性不如 [Yuzu](https://www.iplaysoft.com/yuzu.html)，可惜的是 Yuzu 已经停更了，潜在继承者有：[suyu](https://git.suyu.dev/suyu/suyu)、[torzu](https://github.com/litucks/torzu)。
 
-推荐的游戏有：塞尔达-王国之泪、塞尔达-旷野之息、煤炭镇的小白（老婆喜欢看蜡笔小新，爱玩这个游戏）、双人成行。
+推荐的游戏有：
+
+1. 塞尔达-王国之泪、塞尔达-旷野之息；
+2. 煤炭镇的小白（老婆喜欢看蜡笔小新，爱玩这个游戏）；
+3. 潜水员戴夫；
+4. 双人成行。
 
 {{< figure src="/images/蜡笔小新1.png" title="蜡笔小新1" >}}
 {{< figure src="/images/蜡笔小新2.png" title="蜡笔小新2" >}}
