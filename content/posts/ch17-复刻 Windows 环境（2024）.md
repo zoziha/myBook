@@ -28,9 +28,6 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v "Fl
 Win10/Win11升级至Win11，可跳过TPM验证，采用脚本 [MediaCreationTool.bat](https://github.com/AveYo/MediaCreationTool.bat)。然后装载下载的镜像，使用镜像中的
 setup.exe更新同样许可证版本的Windows11，可以保持个人数据与应用。
 
-<div align="center">
-<img src="https://img2.imgtp.com/2024/04/29/jOanXDsL.png" alt="1714382044505.png" title="1714382044505.png" width="640"></div>
-
 ## 17.1 Desktop Apps
 
 <div class="my-custom-class">
