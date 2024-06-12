@@ -54,6 +54,7 @@ fpm run
 ### 27.1.2 meson-更适合大型代码
 
 ```sh
+meson init --language=fortran --version=0.1.0 --build --name=myproject
 meson setup build
 meson compile -C build
 meson devenv -C build

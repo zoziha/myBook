@@ -18,7 +18,7 @@ categories = ["娱乐"]
 
 ```cmd
 @echo off  :: 阻止Windows更新
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v "FlightSettingsMaxPauseDays" /t REG_DWORD /d 65535
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v "FlightSettingsMaxPauseDays" /t REG_DWORD /d 15535
 ```
 
 [1]: https://zhuanlan.zhihu.com/p/633610238

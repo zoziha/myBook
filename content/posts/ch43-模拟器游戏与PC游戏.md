@@ -42,7 +42,8 @@ Ryujinx 运行《塞尔达-王国之泪》会发生闪退，稳定性不如 [Yuz
 {{< figure src="/images/蜡笔小新2.png" title="蜡笔小新2" >}}
 
 * [Yuzu贴吧](https://tieba.baidu.com/f?kw=yuzu%E6%A8%A1%E6%8B%9F%E5%99%A8&ie=utf-8)。
-* 我的荣耀 X14 Plus 笔记本电脑 CPU (AMD 8845HS) 配备的 780M 核显高于 Yuzu 推荐核显配置 680M。
+* 我的荣耀 X14 Plus 笔记本电脑 CPU (AMD 8845HS) 配备的 780M 核显高于 Yuzu 推荐核显配置 680M；
+* 玩模拟器建议开启 FSR 超采样技术，性能提升，提高画质，提高帧数。
 
 ## 43.4 PC 游戏
 
