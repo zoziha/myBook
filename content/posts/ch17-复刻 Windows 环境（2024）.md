@@ -639,3 +639,8 @@ Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 Invoke-Expression (starship init powershell)        # Starship
 [System.Console]::OutputEncoding=[System.Text.Encoding]::GetEncoding(65001)     # utf-8
 ```
+
+## 17.5 Edge 浏览器插件
+
+1. [uBlock Origin](https://github.com/gorhill/uBlock)：阻止广告、跟踪、恶意软件；
+2. [豆包](https://www.doubao.com/chat/)：网页翻译和总结。
