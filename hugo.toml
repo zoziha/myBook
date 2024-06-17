@@ -1,12 +1,16 @@
 baseURL = 'https://userzuo.netlify.app/'
 title = "旅行者0x2号"
 disqusShortname = "tanksuzuki"
-theme = "LoveIt"
+theme = ["hugo-search-fuse-js", "LoveIt"]
 languageCode = 'zh-CN'
 languageName = '简体中文'
 copyright = "Written by ZUO Zhihua"
 paginate = 12
 hasCJKLanguage = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/kaushalmodi/hugo-search-fuse-js"
 
 [author]
   name = "左志华"
@@ -34,6 +38,12 @@ hasCJKLanguage = true
         identifier = "about"
         name = "关于"
         url = "/about/"
+    [[menu.main]]
+        pre = "<i class='fas fa-fw fa-search'></i>"
+        name = "搜索"
+        weight = 5
+        identifier = "search"
+        url = "/search/"
 
 [params]
   # site default theme ["auto", "light", "dark"]
@@ -124,25 +134,7 @@ hasCJKLanguage = true
 
   #  Search config
   [params.search]
-    enable = true
-    # type of search engine ["lunr", "algolia"]
-    type = "lunr"
-    # max index length of the chunked content
-    contentLength = 4000
-    # placeholder of the search bar
-    placeholder = ""
-    #  max number of results length
-    maxResultLength = 10
-    #  snippet length of the result
-    snippetLength = 30
-    #  HTML tag name of the highlight part in results
-    highlightTag = "em"
-    #  whether to use the absolute URL based on the baseURL in search index
-    absoluteURL = false
-    [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
+    enable = false
 
   # Home page config
   [params.home]
@@ -580,4 +572,3 @@ hasCJKLanguage = true
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
