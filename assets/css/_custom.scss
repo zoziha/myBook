@@ -4,6 +4,7 @@
     --background-dark: #3a3535;
     --text-color-light: #333333;
     --text-color-dark: #ffffff;
+    --input-color: #42b983;
     --border-color: #cccccc;
     --focus-color: #007bff;
 }
@@ -50,7 +51,7 @@
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    color: var(--text-color-light);
+    color: var(--input-color);
     background: transparent;
     border: 2px solid var(--border-color);
     border-radius: 4px;
