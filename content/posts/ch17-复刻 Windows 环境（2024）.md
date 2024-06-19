@@ -14,7 +14,7 @@ categories = ["娱乐"]
 3. MSYS2 Pkgs；
 4. Powershell 配置；
 5. Geek Uninstaller、AutoClock（shell:startup）、Traffic Monitor（[VC++运行时](https://docs.microsoft.com/zh-CN/cpp/windows/latest-supported-vc-redist?view=msvc-170)）、迅雷 11、B0pass、LS-DYNA、Fliqlo.scr等。
-6. [停止 Windows 更新][1]。
+6. [停止 Windows 更新][1]，性能较低的 PC，可以关闭 Win11 的动画效果。
 
 ```cmd
 @echo off  :: 阻止Windows更新
