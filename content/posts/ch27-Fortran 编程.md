@@ -53,6 +53,8 @@ fpm run
 
 ### 27.1.2 meson-更适合大型代码
 
+使用 meson、CMake、GFortran 等工具，可以方便在远程服务器（Linux、Windows-MSYS2）上使用编译环境。
+
 ```sh
 meson init --language=fortran --version=0.1.0 --build --name=myproject
 meson setup build
