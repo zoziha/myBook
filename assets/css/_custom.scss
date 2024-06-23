@@ -1,0 +1,87 @@
+/* 定义CSS变量 */
+:root {
+    --background-light: #ffffff;
+    --background-dark: #3a3535;
+    --text-color-light: #333333;
+    --text-color-dark: #ffffff;
+    --input-color: #42b983;
+    --border-color: #cccccc;
+    --focus-color: #007bff;
+}
+
+/* 搜索页面 */
+.search {
+    position: relative;
+    padding: 3.5rem 1rem 1rem;
+    width: 100%;
+    max-width: 600px; /* 限制最大宽度 */
+    margin: 0 auto;
+    background: var(--background-light);
+    opacity: .95;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .search {
+        background: var(--background-dark);
+    }
+}
+
+.search header {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: transparent;
+}
+
+.search header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    .search header h1 {
+        color: var(--text-color-dark);
+    }
+}
+
+.search input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: var(--input-color);
+    background: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.search input:focus {
+    outline: none;
+    border-color: var(--focus-color);
+}
+
+.search #search-results {
+    padding: 1rem;
+    background: var(--background-light);
+    border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .search #search-results {
+        background: var(--background-dark);
+    }
+}
+
+.search hr {
+    margin: 1rem 0;
+    border: none;
+    height: 1px;
+    background: var(--border-color);
+}
+
+a:active, a:hover {
+    color: #2d96bd;
+}

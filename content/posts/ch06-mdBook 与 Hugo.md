@@ -20,3 +20,15 @@ mdbook build
 hugo new posts/my-first-post.md
 hugo server -D
 ```
+
+## 6.1 `Hugo::LoveIt` 支持中文搜索
+
+`LoveIt` 自带的2个搜索插件中文支持差，可以在网页项目中添加 `hugo-search-fuse-js` 来支持中文，`fuse.js` 主要读取摘要，为此：
+
+1. 使用 `Hugo` Extend 版本；
+2. 使用 `go.mod` 管理 `hugo mod get` 依赖；
+3. 参考以下链接。
+
+**参考链接：**
+1. [使用Hugo搭建个人网站(二)-LoveIt主题自定义搜索](https://dnwzlx.com/posts/98850c88/#%E4%BF%AE%E6%94%B9%E6%90%9C%E7%B4%A2%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%A0%B7%E5%BC%8F)；
+2. [zoziha/mybook](https://github.com/zoziha/mybook)。
