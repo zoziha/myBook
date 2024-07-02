@@ -2,6 +2,8 @@
 title = 'Ch19-开箱即用的 Octave/Matlab'
 date = 2024-05-26T23:35:19+08:00
 draft = false
+tags = ["Windows", "Octave", "Matlab"]
+categories = ["学习"]
 +++
 
 ## 19.1 Octave
