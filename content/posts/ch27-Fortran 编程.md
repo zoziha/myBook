@@ -42,7 +42,7 @@ end program main
 
 fpm 目前还不够成熟，主要表现在对外部链接的支持上，meson 则相对更成熟。
 
-这是我写的[《Fortran中文手册》](https://gitee.com/ship-motions/ModernFortranInAction)。
+这是我写的[《Fortran中文手册》](https://gitee.com/zoziha/modern-fortran-chinese-manual/releases)。
 
 ### 27.1.1 fpm-更适合小型代码
 
