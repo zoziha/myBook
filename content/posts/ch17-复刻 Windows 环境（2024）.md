@@ -533,7 +533,7 @@ height="34px" align=left>4.96 MB</td> <td class="normalborder"  height="34px" al
 
 ## 17.3 MSYS2 环境
 
-2024 年 4 月开始，更换笔记本，将新笔记本的 [MSYS2 环境设为 UCRT64][1]。
+2024 年 4 月开始，更换笔记本，将新笔记本的 [MSYS2 环境设为 UCRT64][4]。
 
 [MSYS2][2] 是作者主力编程和开源工具环境，提供了诸如 GCC、Python 等编程环境，也提供了诸如 mdbook、LaTex、inkscape
 等工具。
@@ -548,9 +548,9 @@ pacman -Rs <pkg>    # 删除包
 
 国内开发者可以使用[清华大学的镜像][3]。
 
-[1]: https://my.oschina.net/zuozhihua/blog/8757266
 [2]: https://mirrors.tuna.tsinghua.edu.cn/msys2/distrib/x86_64/
 [3]: https://mirrors.tuna.tsinghua.edu.cn/help/msys2/
+[4]: https://my.oschina.net/zuozhihua/blog/8757266
 
 ```sh
 $ pacman -Qe
