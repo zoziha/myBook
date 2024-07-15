@@ -26,6 +26,14 @@ write-host ", running ""$App $Args"" ..."
 Invoke-Expression -Command "$App $Args"
 ```
 
-## 30.1 参考链接
+## 30.1 Windows 创建软链接
+
+软链接可以方便在 PATH 路径中部署一些实用的命令行工具：
+
+```cmd
+mklink "C:\msys64\ucrt64\bin\notepad3.exe"  "D:\Program Files\Notepad3\Notepad3.exe"
+```
+
+## 30.2 参考链接
 
 1. [在 Windows PowerShell 中获取命令行参数](https://www.delftstack.com/zh/howto/powershell/command-line-arguments-in-powershell/)

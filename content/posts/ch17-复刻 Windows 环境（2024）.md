@@ -3,7 +3,7 @@ title = 'Ch17-复刻 Windows 环境（2024）'
 date = 2024-05-26T23:35:19+08:00
 lastmod = 2024-06-04T18:37:52+08:00
 draft = false
-tags = ["Windows", "记录"]
+tags = ["Windows", "记录", "MSYS2"]
 categories = ["娱乐"]
 +++
 
