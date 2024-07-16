@@ -6,7 +6,7 @@ tags = ["Windows", "PowerShell"]
 categories = ["学习"]
 +++
 
-当运行需要向运行环境传递自定义参数时，PowerShell 的命令行参数传递十分有用。示例：
+当运行需要向运行环境传递自定义参数时，[PowerShell 的命令行参数传递][1]十分有用。示例：
 
 ```powershell
 # 先决条件 `meson compile -C build` 生成可执行文件 FNL.exe
@@ -34,6 +34,22 @@ Invoke-Expression -Command "$App $Args"
 mklink "C:\msys64\ucrt64\bin\notepad3.exe"  "D:\Program Files\Notepad3\Notepad3.exe"
 ```
 
-## 30.2 参考链接
+## 30.2 科学 `clash`
 
-1. [在 Windows PowerShell 中获取命令行参数](https://www.delftstack.com/zh/howto/powershell/command-line-arguments-in-powershell/)
+```powershell
+# clash.ps1
+# 临时添加代理，并且运行联网命令, 例如 `clash -Command "git push"`
+param(
+    [string]$Command = "echo $env:https_proxy"
+)
+
+& {
+    $env:http_proxy = "http://127.0.0.1:7890"
+    $env:https_proxy = "http://127.0.0.1:7890"
+    
+    # 执行命令
+    Invoke-Expression -Command $Command
+}
+```
+
+[1]: https://www.delftstack.com/zh/howto/powershell/command-line-arguments-in-powershell
