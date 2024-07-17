@@ -2,7 +2,7 @@
 title = 'Ch30-PowerShell 传递命令行参数'
 date = 2024-05-26T23:35:19+08:00
 draft = false
-tags = ["Windows", "PowerShell"]
+tags = ["Windows", "PowerShell", "OpenMP"]
 categories = ["学习"]
 +++
 
@@ -48,6 +48,24 @@ param(
     $env:https_proxy = "http://127.0.0.1:7890"
     
     # 执行命令
+    Invoke-Expression -Command $Command
+}
+```
+
+## 30.3 OMP 线程配置与计算
+
+```powershell
+# omp.ps1, run example: ./omp.ps1 -Command "./build/FNL -C example/case1" -NT 3
+# 临时更改OMP_NUM_THREADS，并且运行计算命令
+param(
+    [int16]$NT = 4,
+    [string]$Command = "echo $env:OMP_NUM_THREADS"
+)
+
+& {
+    $env:OMP_NUM_THREADS = $NT
+
+    # 执行计算命令
     Invoke-Expression -Command $Command
 }
 ```
