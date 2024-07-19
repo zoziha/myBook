@@ -31,7 +31,7 @@ Invoke-Expression -Command "$App $Args"
 软链接可以方便在 PATH 路径中部署一些实用的命令行工具：
 
 ```cmd
-mklink "C:\msys64\ucrt64\bin\notepad3.exe"  "D:\Program Files\Notepad3\Notepad3.exe"
+mklink "C:\msys64\ucrt64\bin\Notepad4.exe"  "D:\Program Files\Notepad4\Notepad4.exe"
 ```
 
 ## 30.2 科学 `clash`
@@ -46,7 +46,7 @@ param(
 & {
     $env:http_proxy = "http://127.0.0.1:7890"
     $env:https_proxy = "http://127.0.0.1:7890"
-    
+
     # 执行命令
     Invoke-Expression -Command $Command
 }
