@@ -3,7 +3,7 @@ title = 'Ch27-Fortran 编程'
 date = 2024-05-26T23:35:19+08:00
 lastmod = 2024-06-04T18:37:52+08:00
 draft = false
-tags = ["Fortran", "MKL"]
+tags = ["Fortran", "MKL", "编程"]
 categories = ["学习"]
 +++
 
@@ -84,3 +84,10 @@ oneMKL 的，原因是 oneMKL 中的 BLAS 是 C 接口或者 Fortran77 写的。
     ```
 
 [4]: https://cmake.org/cmake/help/latest/module/FindBLAS.html
+
+## 27.4 Git 补丁使用
+
+```sh
+git diff > 1.patch  # 注意 PowerShell 可能会使用 UTF-16 编码
+git apply 1.patch
+```
