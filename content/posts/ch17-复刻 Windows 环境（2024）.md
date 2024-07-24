@@ -3,7 +3,7 @@ title = 'Ch17-复刻 Windows 环境（2024）'
 date = 2024-05-26T23:35:19+08:00
 lastmod = 2024-06-04T18:37:52+08:00
 draft = false
-tags = ["Windows", "记录", "MSYS2"]
+tags = ["Windows", "记录", "MSYS2", "Scoop"]
 categories = ["娱乐"]
 +++
 
@@ -613,6 +613,8 @@ mingw-w64-x86_64-winpthreads-git 11.0.0.r107.gd367cc9d7-1
 mingw-w64-x86_64-winstorecompat-git 11.0.0.r107.gd367cc9d7-1
 ```
 
+建议使用 MSYS2 作为滚动、复杂链接库依赖的开发者环境，[Scoop](https://scoop.sh/#/) 作为稳定的工具集环境。
+
 ## 17.4 Powershell 配置
 
 * [Starship](https://starship.rs/)：跨平台的 Shell 提示符；
@@ -638,6 +640,11 @@ Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 Invoke-Expression (starship init powershell)        # Starship
 [System.Console]::OutputEncoding=[System.Text.Encoding]::GetEncoding(65001)     # utf-8
+
+del -force alias:pwd
+del -force alias:rm
+del -force alias:ls
+del -force alias:cp
 ```
 
 ## 17.5 Edge 浏览器插件
