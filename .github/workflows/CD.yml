@@ -1,9 +1,8 @@
 name: hugo & netlify
 on:
   push:
-    # paths:
-    #   - "content/posts/**.md"
-    #   - "hugo.toml"
+    branches:
+      - main
 
   pull_request:
     branches:
