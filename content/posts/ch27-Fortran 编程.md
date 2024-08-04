@@ -26,7 +26,8 @@ categories = ["学习"]
 4. [Meson](https://mesonbuild.com/)；
 5. [FORD](https://github.com/Fortran-FOSS-Programmers/ford)；
 6. [Git](https://git-scm.com/)；
-7. [Intel VTune Profiler](https://software.intel.com/content/www/us/en/develop/tools/vtune-profiler.html)。
+7. [Intel VTune Profiler](https://software.intel.com/content/www/us/en/develop/tools/vtune-profiler.html)；
+8. [Intel oneAPI 组件](https://www.intel.cn/content/www/cn/zh/developer/articles/tool/oneapi-standalone-components.html#fortran)。
 
 {{< typeit code=Fortran >}}
 program main
