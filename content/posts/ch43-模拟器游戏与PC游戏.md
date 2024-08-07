@@ -31,7 +31,7 @@ GBA 游戏下载：[老男人游戏网](https://www.oldmantvg.net/)。
 * [阿里云盘-游戏包2](https://tieba.baidu.com/p/7929635907)；
 * [上游世界](https://www.vgter.net/)。
 
-Ryujinx 运行《塞尔达-王国之泪》会发生闪退，稳定性不如 [Yuzu](https://www.iplaysoft.com/yuzu.html)，可惜的是 Yuzu 已经停更了，潜在继承者有：[suyu](https://git.suyu.dev/suyu/suyu)、[torzu](https://github.com/litucks/torzu)。
+Ryujinx 运行《塞尔达-王国之泪》会发生闪退，稳定性不如 [Yuzu](https://www.iplaysoft.com/yuzu.html)，可惜的是 Yuzu 已经停更了，潜在继承者有：[suyu](https://git.suyu.dev/suyu/suyu)、[torzu](https://codeberg.org/litucks/torzu)。
 
 推荐的游戏有：
 
@@ -50,7 +50,7 @@ Ryujinx 运行《塞尔达-王国之泪》会发生闪退，稳定性不如 [Yuz
 
 笔记本性能孱弱，购买了 START 云游戏（相当于 Moonlight 的串流功能），玩了以下游戏：
 
-1. 原神（美术设计取胜，玩法趣味输于塞尔达）；
+1. 原神（美术设计取胜，玩法趣味输于塞尔达，日系内容偏重）；
 2. 崩坏-星穹铁道（其实没那么好玩）；
 3. 拳皇；
 4. 地下城与勇士（弃坑）；
