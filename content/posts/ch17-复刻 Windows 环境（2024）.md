@@ -647,6 +647,8 @@ del -force alias:ls
 del -force alias:cp
 ```
 
+最新的 PWSH 已经自带了 PSReadLine，无需安装。
+
 ## 17.5 Edge 浏览器插件
 
 1. [uBlock Origin](https://github.com/gorhill/uBlock)：阻止广告、跟踪、恶意软件；
