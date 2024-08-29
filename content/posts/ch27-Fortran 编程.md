@@ -92,3 +92,26 @@ oneMKL 的，原因是 oneMKL 中的 BLAS 是 C 接口或者 Fortran77 写的。
 git diff > 1.patch  # 注意 PowerShell 可能会使用 UTF-16 编码
 git apply 1.patch
 ```
+
+## 27.5 Gprof 教程
+
+`gprof` 是 GCC 提供的一个工具，用于分析程序性能。在 Windows 下使用 MSYS2 的 gprof 命令行工具需要额外添加 `-no-pie` 选项。
+
+1. 在使用 GCC 编译的程序中启用编译选项 `-pg` (MSYS2 下需要额外添加 `-no-pie`)；
+2. 运行程序；
+3. 使用 `gprof` 命令分析程序性能：
+    ```sh
+    gprof mian.exe gmon.out > gprof.txt
+    ```
+
+```fortran
+subroutine test
+    print *, "Hello, world!"
+end subroutine
+
+program main
+
+call test
+
+end program
+```
