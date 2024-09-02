@@ -17,3 +17,7 @@ Windows 默认的资源管理器比较卡顿臃肿，使用 Rust 编写的 [Bott
 4. [dust](https://github.com/bootandy/dust)；
 5. [fd](https://github.com/sharkdp/fd)；
 6. [hyperfine](https://github.com/sharkdp/hyperfine)。
+
+## 37.1 删除失效的默认打开程序条目
+
+打开注册表 `计算机\HKEY_CLASSES_ROOT\Applications`，删除不需要的条目。
