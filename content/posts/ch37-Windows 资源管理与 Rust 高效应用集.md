@@ -17,3 +17,20 @@ Windows 默认的资源管理器比较卡顿臃肿，使用 Rust 编写的 [Bott
 4. [dust](https://github.com/bootandy/dust)；
 5. [fd](https://github.com/sharkdp/fd)；
 6. [hyperfine](https://github.com/sharkdp/hyperfine)。
+
+## 37.1 腾讯系扫盘问题
+
+腾讯的软件如微信、START 云游戏存在频繁读取磁盘的现象，Windows 给的权限真的太宽了。
+使用火绒进行自定义规则，禁止一些读写操作：
+
+```sh
+# WeChat
+C:\Users\<USER_NAME>\AppData\Roaming\Tencent\WeChat\log\*
+C:\Users\<USER_NAME>\Documents\WeChat Files\<USE_NAME>\config\*
+C:\Users\<USER_NAME>\Documents\WeChat Files\All Users\config\*
+# START
+C:\Program Files\*
+C:\*.sys
+C:\WINDOWS\*.exe
+D:\*
+```
