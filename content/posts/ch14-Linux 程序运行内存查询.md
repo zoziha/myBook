@@ -7,9 +7,11 @@ draft = false
 科学计算程序编程时可能需要查询程序运行时的内存使用情况。
 
 ```sh
-ps -aux|grep benCh3d-grid2  # 查看 benCh3d-grid2 进程的 PID
+ps -aux|grep benCh3d-grid2  # 查看 benCh3d-grid2 进程的 PID, 第二列即为 PID
 cat /proc/3300706/status    # 查看 PID 为 3300706 的进程的内存使用
 ```
+
+科学计算代码大场景模拟时网格节点多，关注 `VMPeak` 内存占用峰值。
 
 ## 搭建 WSL-Debian 环境
 

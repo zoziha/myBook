@@ -34,3 +34,7 @@ C:\*.sys
 C:\WINDOWS\*.exe
 D:\*
 ```
+
+## 37.2 删除失效的默认打开程序条目
+
+打开注册表 `计算机\HKEY_CLASSES_ROOT\Applications`，删除不需要的条目。
