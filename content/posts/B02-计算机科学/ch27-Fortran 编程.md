@@ -89,9 +89,10 @@ oneMKL 的，原因是 oneMKL 中的 BLAS 是 C 接口或者 Fortran77 写的。
 ## 27.4 CMake 的常用命令
 
 ```sh
-cmake -B build -S .
+cmake -B build -S . -DCMAKE_INSTALL_PREFIX=/usr/local
 cmake --build build
 ctest --test-dir build --parallel
+cmake --install build
 ```
 
 ## 27.5 Git 补丁使用
