@@ -9,6 +9,8 @@ categories = ["计算机科学"]
 > 📌5 分钟教你在 Windows 上运行 Fortran 。
 > zoziha，e-mail: [zuo.zhihua@qq.com](mailto:zuo.zhihua@qq.com "zuo.zhihua@qq.com")，青岛黄岛，中铁世博城，2022-11-24。
 
+现在使用 [fortran-setup.ps1](https://gitlab.com/zoziha/windows-msys2-fortran) 进行自动化脚本搭建 Fortran 环境。
+
 ## ⚙️环境搭建
 
 从以下链接下载并安装 [msys2](https://mirrors.tuna.tsinghua.edu.cn/msys2/distrib/x86_64/ "msys2")：
