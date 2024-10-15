@@ -27,3 +27,31 @@ export FC=ifx
 ```
 
 - [oenAPI APT安装](https://www.intel.cn/content/www/cn/zh/developer/tools/oneapi/base-toolkit-download.html?operatingsystem=linux&linux-install-type=apt)
+
+## 记录一次 SSH 攻击
+
+在 2024 年 10 月 14 日的早上，我通过 SSH 连接远程服务器，立马发现 CPU 使用率非常高。
+我慌了，我怀疑它运行了很长时间了，于是我开始学习如何解决它。最后可行的方案是查询定时任务：
+
+```sh
+sudo readlink -f /proc/144329/exe  # 查询 PID 的程序
+sudo crontab -l  # 查询 crontab
+@monthly /root/.cfg/./dealer  > /dev/null 2>&1 & disown
+```
+
+并且查询恶意软件创建时间，发现它其实是我登录 SSH 的时候被攻击的：
+
+```sh
+sudo stat /root/.cfg/./dealer
+  文件：/root/.cfg/./dealer
+  大小：894371    	块：1752       IO 块大小：4096   普通文件
+设备：fd00h/64768d	Inode：16518450    硬链接：1
+权限：(0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+访问时间：2024-10-14 09:08:03.860685918 +0800
+修改时间：2024-10-14 09:08:03.860685918 +0800
+变更时间：2024-10-14 09:08:03.860685918 +0800
+创建时间：2024-10-14 09:08:03.860685918 +0800
+```
+
+1. https://www.cnblogs.com/Gsealy/p/14480365.html
+2. https://blog.csdn.net/DLW__/article/details/135648683
