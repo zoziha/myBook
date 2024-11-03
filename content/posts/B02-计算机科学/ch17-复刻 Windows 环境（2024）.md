@@ -653,3 +653,12 @@ del -force alias:cp
 
 1. [uBlock Origin](https://github.com/gorhill/uBlock)：阻止广告、跟踪、恶意软件；
 2. [豆包](https://www.doubao.com/chat/)：网页翻译和总结。
+
+## Scoop 安装
+
+```sh
+[Environment]::SetEnvironmentVariable('SCOOP', 'D:\Users\zoziha\Scoop', 'User');
+[Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', 'D:\Scoop', 'Machine');
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser;
+irm https://ghp.ci/https://raw.githubusercontent.com/duzyn/scoop-cn/master/install.ps1 | iex
+```
