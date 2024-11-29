@@ -1,5 +1,5 @@
 +++
-title = 'Ch14-Linux 程序运行内存查询'
+title = 'B.Ch14-Linux 程序运行内存查询'
 date = 2024-05-26T23:35:19+08:00
 draft = false
 categories = ["计算机科学"]
@@ -14,7 +14,7 @@ cat /proc/3300706/status    # 查看 PID 为 3300706 的进程的内存使用
 
 科学计算代码大场景模拟时网格节点多，关注 `VMPeak` 内存占用峰值。
 
-## 搭建 WSL-Debian 环境
+## 14.1 搭建 WSL-Debian 环境
 
 ```sh
 wsl --install -d Debian
@@ -28,7 +28,7 @@ export FC=ifx
 
 - [oenAPI APT安装](https://www.intel.cn/content/www/cn/zh/developer/tools/oneapi/base-toolkit-download.html?operatingsystem=linux&linux-install-type=apt)
 
-## 记录一次 SSH 攻击
+## 14.2 记录一次 SSH 攻击
 
 在 2024 年 10 月 14 日的早上，我通过 SSH 连接远程服务器，立马发现 CPU 使用率非常高。
 我慌了，我怀疑它运行了很长时间了，于是我开始学习如何解决它。最后可行的方案是查询定时任务：
@@ -55,3 +55,13 @@ sudo stat /root/.cfg/./dealer
 
 1. https://www.cnblogs.com/Gsealy/p/14480365.html
 2. https://blog.csdn.net/DLW__/article/details/135648683
+
+## 14.3 Linux 的长时数值模拟
+
+借助 `screen` 工具，可以在断开连接后重新连接到会话。
+
+- 新增会话：`screen`, `my_cmd &`
+- 临时退出会话：`ctrl+a z`
+- 列举会话：`screen -ls`
+- 重连会话：`screen -r 1234`
+- 杀死会话：`screen -S 1234 -X` 或 `ctrl+a k`
